@@ -1,0 +1,25 @@
+body,
+html,
+.content,
+.section {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.main,
+.us,
+.projects {
+    background-image: url('./images/main.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects {
+    background-image: url('./images/projects.jpg');
+}
+
+.us {
+    background-image: url('./images/us.jpg');
+}
