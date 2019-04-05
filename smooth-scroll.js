@@ -49,30 +49,43 @@ let scrollData = {
     panelTargetIndex: 0
 }
 
-// const scrollTo = targetY => {
-//     if() {
-//         //todo needs scrolling, recursion
-//         scrollData.currentScroll = newScroll
-//     } else {
-//         scrollData.inProgress = false
-//     }
-// }
+const scrollTo = targetY => {
+    let { scrollY } = window
+    let diff = Math.round(Math.sqrt(Math.abs(scrollY - targetY)))
+    if() {
+        //todo needs scrolling, recursion
+        scrollData.currentScroll = newScroll
+    }
+    return
+}
 
-const getNewPanelIndex = () => {
+let scrollTargetPanelIndex = 0
+let oldScroll = 0
+
+const getNewPanelIndex = e => {
     scrollData.currentScroll = e.target.scrollingElement.scrollTop
     if (oldScroll <= scrollData.currentScroll) {
+        if (scrollTargetPanelIndex <= 1) {
+            scrollTargetPanelIndex = scrollTargetPanelIndex + 1
+        }
         console.log('down')
     } else if (oldScroll > scrollData.currentScroll) {
         console.log('up')
+        if (scrollTargetPanelIndex > 1) {
+            scrollTargetPanelIndex = scrollTargetPanelIndex - 1
+        }
     }
     console.log(scrollTargetPanelIndex)
+    oldScroll = e.target.scrollingElement.scrollTop
+    return scrollTargetPanelIndex
 }
 
 const scrollToPanel = index => {
     scrollData.inProgress = true
     const panel = panels[index]
     const targetY = document.querySelector(`.section.${panel}`).offsetTop
-    //scrollTo(targetY)
+    scrollTo(targetY)
+    scrollData.inProgress = false
 }
 
 document.addEventListener('DOMContentLoaded', () => {
