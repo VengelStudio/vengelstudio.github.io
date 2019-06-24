@@ -148,9 +148,11 @@ html,
     overflow: hidden;
     border: 1px rgba(0, 0, 0, 0.3) solid;
 }
+
 .us-bar-links{
     justify-content: space-around;
 }
+
 .us-bar-links > img{
     display:block;
     height: 5vh;
@@ -177,7 +179,12 @@ html,
 ::-webkit-scrollbar {
     display: none;
 }
-
+.footer{
+    color:white;
+    position: relative;
+    text-align: center;
+    bottom: 0;
+}
 @media (min-width: 1025px) {
     .us-wrapper > img {
         margin-top: 10vh;
@@ -191,7 +198,9 @@ html,
     .section.projects {
         width: 100vw;
     }
-
+    .footer{
+        grid-column: span 2;
+    }
     .section.project {
         align-items: center;
         justify-content: center;
