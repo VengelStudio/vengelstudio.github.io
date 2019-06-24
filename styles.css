@@ -15,17 +15,17 @@ html,
 .main,
 .us,
 .projects {
-    height:100%;
+    height: 100%;
     background-image: url('./images/main.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.main{
-    padding-top:10vh;
+.main {
+    padding-top: 10vh;
 }
-.main-wrapper{
-    height:48vh;
+.main-wrapper {
+    height: 48vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,21 +38,27 @@ html,
     position: relative;
     z-index: -10;
 }
-.main-logo{
+.main-logo {
     height: 25vh;
 }
-.main-text{
+.main-text {
     font-family: 'Roboto', sans-serif;
     font-size: 6vh;
-    color:black;
+    color: black;
 }
-.bottom-arrow{
+.bottom-arrow {
     position: absolute;
-    bottom:0;
-    left:50%;
-    height:3vh;
+    bottom: 0;
+    left: 50%;
+    height: 3vh;
     transform: translateX(-50%);
     margin-bottom: 3vh;
+}
+
+.section.project {
+    position: relative;
+    display: grid;
+    grid-template-columns: min-content 1fr;
 }
 
 .project-bg {
@@ -64,33 +70,43 @@ html,
 }
 
 .project-bg img {
-    position: absolute;
-    z-index: -10;
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     filter: blur(3px);
     transform: scale(1.1);
 }
 
 .project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    margin-right: 16px;
+}
+
+.project-title > span {
+    border: solid white 1px;
+    background-color: rgba(10, 10, 10, 0.383);
+    border-radius: 32px;
+    padding: 8px 16px;
+    text-align: center;
 }
 
 .project-logo {
-    height: 20vh;
-    width: 20vh;
-    border-radius: 16px;
+    height: 160px;
+    width: 160px;
+    border-radius: 32px;
+    overflow: hidden;
+    margin: auto 16px;
 }
 
-.project-logo--cardman {
-    background-image: url('./images/projects/cardman-logo.png');
-}
-
-.project-logo--purifier {
-    background-image: url('./images/projects/purifier-logo.png');
-}
-
-.project-logo--poznajmysie {
-    background-image: url('./images/projects/poznajmysie-logo.png');
+.project-logo > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .us {
@@ -102,4 +118,19 @@ html,
 }
 
 @media (min-width: 768px) {
+    .projects {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section.projects {
+        width: 100vw;
+    }
+
+    .section.project {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr min-content;
+    }
 }
