@@ -13,6 +13,49 @@ html,
     margin: 0;
 }
 
+.overlay {
+    position: fixed;
+    color: whitesmoke;
+    z-index: 10;
+    background-color: rgb(24, 24, 24, 0.9);
+    top: 16px;
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.overlay-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay-title {
+    font-size: 5vw;
+    padding-bottom: 4px;
+    border-bottom: white solid 1px;
+    color: whitesmoke;
+}
+
+.overlay-close-btn {
+    border: 1px white solid;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    background: none;
+    font-size: 7vw;
+    color: whitesmoke;
+}
+
+.overlay-content {
+    flex: 1;
+}
+
 .main,
 .us,
 .projects {
@@ -47,6 +90,7 @@ html,
 .main-text {
     font-size: 6vh;
     color: black;
+    font-weight: 300;
 }
 
 .bottom-arrow {
@@ -76,7 +120,7 @@ html,
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(3px);
+    filter: blur(2px) grayscale(0.6) brightness(0.6) sepia(0.3);
     transform: scale(1.1);
 }
 
@@ -96,6 +140,7 @@ html,
     border-radius: 32px;
     padding: 8px 16px;
     text-align: center;
+    cursor: pointer;
 }
 
 .project-logo {
@@ -104,6 +149,7 @@ html,
     border-radius: 32px;
     overflow: hidden;
     margin: auto 16px;
+    cursor: pointer;
 }
 
 .us-img {
