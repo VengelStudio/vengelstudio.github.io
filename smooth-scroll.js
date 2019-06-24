@@ -1,42 +1,55 @@
-let isProgress = false
-let oldScroll = 0
-let targetY = 0
-const scrollTo = y => {
+const scrollTo = targetY => {
     let { scrollY } = window
-    scrollY = Math.ceil(scrollY)
-    let isScrollingDown = (scrollY - targetY) < 0
-    if (scrollY !== y) {
-        let newScroll = isScrollingDown ? scrollY + 1 : scrollY - 1
+    let isScrollingDown = scrollY - targetY < 0
+    let delta = Math.round(Math.sqrt(Math.abs(scrollY - targetY)))
+    if (scrollY !== targetY) {
+        let newScroll = isScrollingDown ? scrollY + delta : scrollY - delta
         window.scrollTo(0, newScroll)
         window.requestAnimationFrame(() => {
-            scrollTo(newScroll)
+            scrollTo(targetY)
         })
-    }
-    else {
+    } else {
         isProgress = false
     }
 }
-const getNewY = e => {
-    isProgress = true
-    let height = window.innerHeight
-    let currentScroll = e.target.scrollingElement.scrollTop // Y axis value of scroll
-    if (oldScroll <= currentScroll) {
-        targetY = (targetY <= height) ? targetY + height : targetY
-        console.log('down')
-    } else if (oldScroll > currentScroll) {
-        console.log('up')
-        targetY = (targetY >= height) ? targetY - height : targetY
+
+let lastScroll = window.scrollY
+
+const getDirection = e => {
+    let newScroll = window.scrollY
+    let result = 0
+    if (newScroll > lastScroll) {
+        //down
+        result = 1
+    } else if (newScroll < lastScroll) {
+        //up
+        result = -1
     }
-    console.log(targetY)
-    oldScroll = e.target.scrollingElement.scrollTop
-    return targetY
+    lastScroll = newScroll
+    return result
+}
+
+let targetY = 0
+const height = window.innerHeight
+const getNewTargetY = e => {}
+
+let inProgress = false
+let currentScroll = 0
+
+const onScroll = e => {
+    if (inProgress === true) {
+        //window.scrollTo(0, currentScroll)
+        e.preventDefault()
+        inProgress = false
+    } else {
+        inProgress = true
+        //targetY = getNewTargetY(e)
+        console.log(getDirection(e))
+        scrollTo(currentScroll)
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.addEventListener('scroll', e => {
-        if (isProgress === false) {
-            let newY = getNewY(e)
-            scrollTo(newY)
-        }
-    })
+    //scrollTo(currentScroll)
+    //window.addEventListener('scroll', onScroll)
 })
