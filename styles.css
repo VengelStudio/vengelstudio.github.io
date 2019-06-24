@@ -25,32 +25,34 @@ html,
     background-image: url('./images/projects.jpg');
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+    z-index: -10;
 }
 
 .project-bg {
-    background-size: contain;
-    filter: blur(2px);
-    height: 33vh;
+    height: 33.3vh;
     width: 100%;
     position: absolute;
-    z-index: -100;
+    z-index: -10;
+    overflow: hidden;
 }
 
-.project--cardman {
-    background-image: url('./images/projects/cardman.jpg');
+.project-bg img {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    object-fit: contain;
+    filter: blur(3px);
+    transform: scale(1.1);
 }
 
-.project--purifier {
-    background-image: url('./images/projects/purifier.jpg');
-}
-
-.project--poznajmysie {
-    background-image: url('./images/projects/poznajmysie.jpg');
+.project-title {
 }
 
 .project-logo {
     height: 20vh;
     width: 20vh;
+    border-radius: 16px;
 }
 
 .project-logo--cardman {
@@ -71,4 +73,7 @@ html,
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+@media (min-width: 768px) {
 }
