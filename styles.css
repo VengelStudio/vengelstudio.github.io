@@ -83,7 +83,7 @@ html,
     justify-content: center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-size: 6vmin;
     margin-right: 16px;
 }
 
@@ -117,7 +117,7 @@ html,
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     .projects {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -128,9 +128,23 @@ html,
     }
 
     .section.project {
+        align-items: center;
+        justify-content: center;
         position: relative;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr min-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-logo,
+    .project-title {
+        margin: 32px 0;
+    }
+
+    .project-bg {
+        height: 100vh;
+    }
+
+    .project-title {
+        font-size: 3vmin;
     }
 }
