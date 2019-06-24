@@ -15,18 +15,44 @@ html,
 .main,
 .us,
 .projects {
+    height:100%;
     background-image: url('./images/main.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.main{
+    padding-top:10vh;
+}
+.main-wrapper{
+    height:48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .projects {
     background-image: url('./images/projects.jpg');
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     position: relative;
     z-index: -10;
+}
+.main-logo{
+    height: 25vh;
+}
+.main-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vh;
+    color:black;
+}
+.bottom-arrow{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    height:3vh;
+    transform: translateX(-50%);
+    margin-bottom: 3vh;
 }
 
 .project-bg {
