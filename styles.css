@@ -127,8 +127,12 @@ html,
     height: 100%;
 }
 
-.us {
+.section.us {
     background-image: url('./images/us.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 100vh 100vh;
+    height: auto;
 }
 
 .us-wrapper > img {
@@ -189,5 +193,12 @@ html,
 
     .project-title {
         font-size: 3vmin;
+    }
+
+    .section.us {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+        height: 100vh;
     }
 }
