@@ -200,7 +200,7 @@ html,
     justify-content: space-around;
 }
 
-.us-bar-links > img {
+.us-bar-links > a > img {
     display: block;
     height: 5vh;
     filter: brightness(0.15);
