@@ -66,6 +66,47 @@ html,
     background-size: cover;
 }
 
+#fog1,
+#fog2 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0, 0;
+    border: none;
+}
+
+#fog1 {
+    background-image: url('./images/main/fog1.png');
+    animation: animatedFogWider 170000s linear infinite;
+    filter: opacity(0.5);
+}
+
+#fog2 {
+    background-image: url('./images/main/fog2.png');
+    animation: animatedFog 90000s linear infinite;
+    filter: opacity(0.4);
+}
+
+@keyframes animatedFogWider {
+    from {
+        background-position: 0, 0;
+    }
+    to {
+        background-position: 10000000px 0;
+    }
+}
+
+@keyframes animatedFog {
+    from {
+        background-position: 0, 0;
+    }
+    to {
+        background-position: 5000000px 0;
+    }
+}
+
 .main-wrapper {
     height: 48vh;
     display: flex;
