@@ -100,7 +100,6 @@ html,
     height: 3vh;
     transform: translateX(-50%);
     margin-bottom: 3vh;
-    cursor: pointer;
 }
 
 .section.project {
@@ -326,5 +325,9 @@ html,
         grid-template-columns: 1fr 1fr;
         width: auto;
         height: 100vh;
+    }
+
+    .project-description {
+        flex-direction: column;
     }
 }
