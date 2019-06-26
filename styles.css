@@ -103,7 +103,7 @@ html,
     animation: bounce 2s infinite;
 }
 
-section.project {
+div.project {
     position: relative;
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -178,7 +178,7 @@ section.project {
 }
 
 .project-description button {
-    font-size: 1.25em;
+    font-size: 1.75em;
     color: white;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
@@ -193,6 +193,7 @@ section.project {
 }
 
 .project-description button:first-child {
+    font-size: 1.25em;
     padding: 8px;
 }
 
@@ -337,5 +338,9 @@ section.us {
 
     .project-description {
         flex-direction: column;
+    }
+
+    .project-description-buttons > *:last-child {
+        margin: 8px 0;
     }
 }

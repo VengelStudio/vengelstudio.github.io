@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.section.project').forEach((project, i) => {
+    document.querySelectorAll('div.project').forEach((project, i) => {
         project
             .querySelector('.project-title')
             .addEventListener('click', () => {
