@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:thin,regular&display=swap" rel="stylesheet" />
     <!-- <script src="smooth-scroll.js"></script> -->
+    <script src="scripts.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136678672-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136678672-2');
+    </script>
+
 </head>
-<!-- <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 <body>
-    <div class='overlay' style='display: none'>
-        <span class='overlay-header'>
-            <h1 class='overlay-title'>Cardman Multiplayer</h1>
-            <button class='overlay-close-btn'>&times;</button>
-        </span>
-        <div class='overlay-content'></div>
-    </div>
     <div class="content">
         <div class="section main">
             <div id="fog1"></div>
@@ -38,8 +41,16 @@
                 <div class="project-logo project-logo--cardman">
                     <img src="./images/projects/cardman-logo.png" />
                 </div>
-                <div class="project-title">
+                <button class="project-title">
                     <span>Cardman Multiplayer</span>
+                </button>
+                <div class='project-description'>
+                    <div class='project-description-text'>bla bla bla</div>
+                    <div class='project-description-buttons'>
+                        <button><a href="https://github.com/Kartm">Repository<img src="images/us/git.png"></a></button>
+                        <button>Close</button>
+                    </div>
+                    
                 </div>
             </div>
             <div class="section project project--purifier">
@@ -49,8 +60,11 @@
                 <div class="project-logo project-logo--purifier">
                     <img src="./images/projects/purifier-logo.png" />
                 </div>
-                <div class="project-title">
+                <button class="project-title">
                     <span>Bookmark Purifier</span>
+                </button>
+                <div class='project-description'>
+                    <button>Close</button>
                 </div>
             </div>
             <div class="section project project--poznajmysie">
@@ -60,7 +74,10 @@
                 <div class="project-logo project-logo--poznajmysie">
                     <img src="./images/projects/poznajmysie-logo.png" />
                 </div>
-                <div class="project-title"><span>Poznajmy się</span></div>
+                <button class="project-title"><span>Poznajmy się</span></button>
+                <div class='project-description'>
+                    <button>Close</button>
+                </div>
             </div>
         </div>
         <div class="section us">
@@ -94,7 +111,7 @@
                 </div>
             </div>
             <div class="footer">
-                <p>&copy; 2019 Vengel Studio. All Rights Reserved</p>
+                <p>&copy; 2019 Vengel Studio. All Rights Reserved. Icons made by Freepik</p>
             </div>
         </div>
     </div>
