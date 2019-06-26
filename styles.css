@@ -155,6 +155,9 @@ html,
 
 .us-img {
     height: 40vh;
+    border: 2px rgba(0, 0, 0, 0.6) solid;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 4px rgba(0, 0, 0, 0.7);
 }
 
 .us-wrapper {
@@ -227,13 +230,12 @@ html,
     display: none;
 }
 
-.footer{
-    color:white;
+.footer {
+    color: white;
     position: relative;
     text-align: center;
     bottom: 0;
 }
-
 
 @media (min-width: 1025px) {
     .us-wrapper > img {
@@ -248,10 +250,10 @@ html,
     .section.projects {
         width: 100vw;
     }
-    
- .footer{
-    grid-column: span 2;
-}
+
+    .footer {
+        grid-column: span 2;
+    }
 
     .section.project {
         align-items: center;
