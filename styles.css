@@ -177,13 +177,14 @@ div.project {
     cursor: pointer;
 }
 
+/* Naprawić bałagan tutaj  */
+
 .project-description {
     display: none;
     color: white;
     grid-column: 1/3;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     padding: 20px;
 }
 
@@ -213,9 +214,15 @@ div.project {
     text-align: center;
 }
 
+
 .project-description button:first-child {
     font-size: 1.25em;
     padding: 8px;
+    border:0;
+}
+
+.project-description-buttons > *:first-child{
+    background: none;
 }
 
 .project-description button:first-child > a {
@@ -223,10 +230,17 @@ div.project {
 }
 
 .project-description button:first-child > a > img {
-    width: 32px;
+    width: 64px;
     height: auto;
 }
 
+.project-description button:nth-child(2){
+    width: 16vh;
+    height: 8vh;
+    font-size: 5vh;
+}
+
+/* -------------------------------------- */
 .us-img {
     height: 35vh;
     border: 2px rgba(0, 0, 0, 0.6) solid;
@@ -359,6 +373,16 @@ section.us {
 
     .project-description {
         flex-direction: column;
+    }
+
+    .project-description {
+        display: none;
+        color: white;
+        grid-column: 1/3;
+        min-height: 50vh;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
     }
 
     .project-description-buttons > *:last-child {
