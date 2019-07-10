@@ -5,13 +5,14 @@ import github from '../../../images/icons/github.svg'
 import linkedin from '../../../images/icons/linkedin.svg'
 import email from '../../../images/icons/email.svg'
 import './UsContent.scss'
+import VerticalSash from '../../Sashes/VerticalSash/VerticalSash'
 
 const UsContent = () => {
     return (
         <React.Fragment>
             <div className='us-content'>
                 <div className='two-bars'>
-                    <div className='left-bar'>
+                    <VerticalSash>
                         <img className='logo' src={bartek} alt='' />
                         <p className='name'>Bartosz Kępka</p>
                         <p>Automation and robotics student in Warsaw.</p>
@@ -26,8 +27,8 @@ const UsContent = () => {
                                 <img src={github} alt='' />
                             </a>
                         </div>
-                    </div>
-                    <div className='right-bar'>
+                    </VerticalSash>
+                    <VerticalSash>
                         <img className='logo' src={lukasz} alt='' />
                         <p className='name'>Łukasz Blachnicki</p>
                         <p>Applied computer science student in Wroclaw.</p>
@@ -42,7 +43,7 @@ const UsContent = () => {
                                 <img src={github} alt='' />
                             </a>
                         </div>
-                    </div>
+                    </VerticalSash>
                 </div>
             </div>
             <p className='footer'>

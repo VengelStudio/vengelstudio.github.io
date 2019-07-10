@@ -1,23 +1,14 @@
 @import '../../App/App.scss';
 
 .welcome-content {
-    height: 100vh;
     display: flex;
+    margin: auto 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    width: 100%;
-    background-color: $primaryColor;
-    color: $secondaryColor;
     font-weight: 100;
     font-size: 15vh;
+    text-align: center;
 }
 
 .learn-more-btn {

@@ -1,0 +1,18 @@
+@import '../../App/App.scss';
+
+.main-sash {
+    position: relative;
+    display: block;
+    width: 100vw;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+
+    .main-sash-back {
+        position: absolute;
+        width: 100%;
+        background-color: darken($primaryColor, 20%);
+        height: 10vh;
+        bottom: -1vw;
+        z-index: -1;
+    }
+}

@@ -1,12 +1,13 @@
 import React from 'react'
 import './WelcomeContent.scss'
+import MainSash from '../../Sashes/MainSash/MainSash'
 
 const WelcomeContent = () => {
     return (
         <div className='welcome-content'>
-            <div className='bar'>
-                <p>VENGEL STUDIO</p>
-            </div>
+            <MainSash>
+                <span>VENGEL STUDIO</span>
+            </MainSash>
             <button className='learn-more-btn'>LEARN MORE</button>
         </div>
     )
