@@ -1,0 +1,52 @@
+@import '../../App/App.scss';
+
+.us-content {
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+}
+
+.two-bars {
+    height: 80vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    .left-bar,
+    .right-bar {
+        font-weight: 300;
+        background-color: $primaryColor;
+        height: 100%;
+        width: 25vw;
+        color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .name {
+            font-size: 4vh;
+        }
+        p {
+            margin: 0;
+            padding: 4vh;
+            font-size: 2.5vh;
+            text-align: center;
+        }
+        div {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            img {
+                height: 6vh;
+            }
+        }
+    }
+}
+
+.logo {
+    height: 30vh;
+    width: auto;
+}
+
+.footer {
+    text-align: center;
+}
