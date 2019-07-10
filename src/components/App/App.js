@@ -5,7 +5,14 @@ import './App.scss'
 const App = () => {
     return (
         <div className='main'>
-            <Page>main page</Page>
+            <Page>
+                <div className="welcome-content">
+                    <div className="bar">
+                        <p>VENGEL STUDIO</p>
+                    </div>
+                    <button className='learn-more-btn'>LEARN MORE</button>
+                </div>
+            </Page>
             <Page>projects</Page>
             <Page>about us</Page>
         </div>
