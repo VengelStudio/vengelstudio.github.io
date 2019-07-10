@@ -8,6 +8,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 .main {
 }
 
@@ -41,4 +45,26 @@ body {
     width: 20vh;
     cursor: pointer;
     border-radius: 0.5vh;
+}
+
+.us-content{
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+}
+
+.two-bars{
+    height:80vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    .left-bar, .right-bar{
+        background-color: $primaryColor;
+        height: 100%;
+        width: 30vw;
+    }
+}
+
+.footer{
+    text-align: center;
 }
