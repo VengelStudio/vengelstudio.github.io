@@ -2,12 +2,12 @@ import React from 'react'
 import Page from '../Page/Page'
 import './App.scss'
 
-function App() {
+const App = () => {
     return (
         <div className='main'>
-            <Page />
-            <Page />
-            <Page />
+            <Page>main page</Page>
+            <Page>projects</Page>
+            <Page>about us</Page>
         </div>
     )
 }
