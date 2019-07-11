@@ -46,10 +46,10 @@ const UsContent = () => {
                     </VerticalSash>
                 </div>
             </div>
-            <p className='footer'>
+            <div className='footer'>
                 © 2019 Vengel Studio. All rights reserved. Icons made by
                 Freepik.
-            </p>
+            </div>
         </React.Fragment>
     )
 }
