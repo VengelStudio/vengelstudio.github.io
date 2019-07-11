@@ -6,7 +6,8 @@
     width: 100vw;
     background-color: $primaryColor;
     color: $secondaryColor;
-
+    animation-name: slide;
+    animation-duration: 1s;
     .main-sash-back {
         position: absolute;
         width: 100%;
@@ -16,3 +17,9 @@
         z-index: -1;
     }
 }
+
+@keyframes slide{
+    from {margin-left: -200%;}
+    50% {margin-right: 0;}
+}
+

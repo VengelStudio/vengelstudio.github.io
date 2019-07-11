@@ -20,4 +20,11 @@
     width: 20vh;
     cursor: pointer;
     border-radius: 0.5vh;
+    animation: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in{
+    from{opacity:0;}
+    to{opacity:1;}
 }
