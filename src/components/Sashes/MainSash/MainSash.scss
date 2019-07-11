@@ -1,4 +1,4 @@
-@import '../../App/App.scss';
+@import '../../App/Colors.scss';
 
 .main-sash {
     position: relative;
@@ -18,8 +18,11 @@
     }
 }
 
-@keyframes slide{
-    from {margin-left: -200%;}
-    50% {margin-right: 0;}
+@keyframes slide {
+    from {
+        margin-left: -200%;
+    }
+    50% {
+        margin-right: 0;
+    }
 }
-

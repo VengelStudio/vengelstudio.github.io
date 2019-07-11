@@ -1,4 +1,4 @@
-@import '../../App/App.scss';
+@import '../../App/Colors.scss';
 
 .us-content {
     display: flex;
@@ -46,8 +46,8 @@
 }
 
 .footer {
-    width:100%;
+    width: 100%;
     text-align: center;
     position: absolute;
-    margin-top:93vh;
+    margin-top: 93vh;
 }

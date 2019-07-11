@@ -1,6 +1,4 @@
-$primaryColor: #ffdd00;
-$secondaryColor: #232323;
-$primaryText: #fff;
+@import './Colors.scss';
 
 body {
     background-color: $secondaryColor;
