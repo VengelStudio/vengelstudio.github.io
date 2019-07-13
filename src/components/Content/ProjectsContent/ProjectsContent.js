@@ -8,15 +8,30 @@ import PoznajmySieLogo from '../../../images/logos/poznajmy-sie.svg'
 const ProjectsContent = () => {
     return (
         <div className='projects-content'>
-            <HorizontalSash bgColor={'#3F3F3F'} backColor={'#0F0F0F'}>
+            <HorizontalSash
+                bgColor={'#3F3F3F'}
+                backColor={'#0F0F0F'}
+                githubLink={'github.com/VengelStudio/CardmanMultiplayer'}
+                websiteLink={'cardman-multiplayer.herokuapp.com'}
+            >
                 <img src={CardmanLogo} />
                 <span>Cardman Multiplayer</span>
             </HorizontalSash>
-            <HorizontalSash bgColor={'#457D52'} backColor={'#174D24'}>
+            <HorizontalSash
+                bgColor={'#457D52'}
+                backColor={'#174D24'}
+                githubLink={'link'}
+                websiteLink={'websiteteet.com'}
+            >
                 <span>Bookmark Checker</span>
                 <img src={BookmarkPurifierLogo} />
             </HorizontalSash>
-            <HorizontalSash bgColor={'#8D3A63'} backColor={'#551E39'}>
+            <HorizontalSash
+                bgColor={'#8D3A63'}
+                backColor={'#551E39'}
+                githubLink={'link'}
+                websiteLink={'websiteteet.com'}
+            >
                 <img src={PoznajmySieLogo} />
                 <span>Poznajmy się</span>
             </HorizontalSash>

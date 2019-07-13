@@ -1,6 +1,7 @@
 @import '../../App/Globals.scss';
 
 .us-content {
+    position: relative;
     display: flex;
     justify-content: center;
     height: 95vh;
@@ -21,7 +22,7 @@
         justify-content: center;
         align-items: center;
         .name {
-            font-size: 4vh;
+            font-size: 1.2em;
         }
         p {
             margin: 0;
@@ -33,21 +34,32 @@
             width: 60%;
             display: flex;
             justify-content: space-between;
-            img {
-                height: 6vh;
-            }
         }
     }
 }
 
 .logo {
-    height: 30vh;
+    height: 15vh;
     width: auto;
 }
 
 .footer {
+    font-size: 0.7em;
     width: 100%;
     text-align: center;
     position: absolute;
-    margin-top: 93vh;
+    height: auto;
+    bottom: 0;
+    margin: 0 8px 8px 8px;
+}
+
+.icons {
+    width: 100%;
+    a {
+        img {
+            height: 1.2em;
+            margin: 0 0.2em;
+            object-fit: cover;
+        }
+    }
 }
