@@ -1,6 +1,6 @@
 @import '../../App/Globals.scss';
 
-$bgColor: darken($primaryColor, 30%);
+$bgColor: darken($primaryColor, 20%);
 .vengel-button {
     position: relative;
     background-color: $primaryColor;
@@ -9,8 +9,7 @@ $bgColor: darken($primaryColor, 30%);
     padding: 16px;
     outline: none;
     cursor: pointer;
-    border-top-left-radius: 0.5vh;
-    border-bottom-right-radius: 0.5vh;
+    border-radius: 0.5vh;
 
     &:hover {
         background-color: adjust-hue($primaryColor, 10);
@@ -26,7 +25,7 @@ $bgColor: darken($primaryColor, 30%);
         left: $shadowOffset;
         bottom: 0;
         right: 0;
-        margin: 0 -1 * $shadowOffset -1 * $shadowOffset 0;
+        margin: 1px -1 * $shadowOffset -1 * $shadowOffset 1px;
 
         .bottom-left,
         .top-right {
@@ -38,14 +37,14 @@ $bgColor: darken($primaryColor, 30%);
             position: absolute;
         }
         .bottom-left {
-            left: -1 * $shadowOffset;
+            left: -1 * $shadowOffset + 0px;
             bottom: -1 * $shadowOffset;
             border-color: $bgColor transparent transparent transparent;
         }
 
         .top-right {
             right: 0;
-            top: -2 * $shadowOffset;
+            top: -2 * $shadowOffset + 0px;
             border-color: transparent transparent $bgColor transparent;
         }
     }
