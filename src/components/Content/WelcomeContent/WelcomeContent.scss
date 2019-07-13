@@ -17,6 +17,13 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .welcome-content{
+        display:flex;
+    }
+}
+
+
 @keyframes fade-in {
     from {
         opacity: 0;

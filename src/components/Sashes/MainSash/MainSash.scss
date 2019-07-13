@@ -18,6 +18,17 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .main-sash{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 15vh;
+        font-size: 6vh;
+    }
+}
+
+
 @keyframes slide {
     from {
         margin-left: -200%;
