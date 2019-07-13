@@ -1,6 +1,7 @@
 import React from 'react'
 import './WelcomeContent.scss'
 import MainSash from '../../Sashes/MainSash/MainSash'
+import Button from '../../Reusable/Button/Button'
 
 const WelcomeContent = () => {
     return (
@@ -8,7 +9,7 @@ const WelcomeContent = () => {
             <MainSash>
                 <span>VENGEL STUDIO</span>
             </MainSash>
-            <button className='learn-more-btn'>LEARN MORE</button>
+            <Button>LEARN MORE</Button>
         </div>
     )
 }

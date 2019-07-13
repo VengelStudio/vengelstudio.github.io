@@ -1,0 +1,25 @@
+@import '../../App/Colors.scss';
+
+.vengel-button {
+    position: relative;
+    margin-top: 20vh;
+    background-color: $primaryColor;
+    border: none;
+    font-size: 2.5vh;
+    height: 6vh;
+    width: 20vh;
+    cursor: pointer;
+    border-radius: 0.5vh;
+    animation: fade-in;
+    animation-duration: 1s;
+
+    .back {
+        background-color: darken($primaryColor, 30%);
+        position: absolute;
+        border-radius: 0.5vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
