@@ -1,25 +1,52 @@
-@import '../../App/Colors.scss';
+@import '../../App/Globals.scss';
 
+$bgColor: darken($primaryColor, 30%);
 .vengel-button {
     position: relative;
-    margin-top: 20vh;
     background-color: $primaryColor;
     border: none;
     font-size: 2.5vh;
-    height: 6vh;
-    width: 20vh;
+    padding: 16px;
+    outline: none;
     cursor: pointer;
-    border-radius: 0.5vh;
-    animation: fade-in;
-    animation-duration: 1s;
+    border-top-left-radius: 0.5vh;
+    border-bottom-right-radius: 0.5vh;
+
+    &:hover {
+        background-color: adjust-hue($primaryColor, 10);
+    }
 
     .back {
-        background-color: darken($primaryColor, 30%);
+        background-color: $bgColor;
         position: absolute;
-        border-radius: 0.5vh;
-        top: 0;
-        left: 0;
+        border: 0;
+        border-bottom-right-radius: 0.5vh;
+        z-index: -1;
+        top: $shadowOffset;
+        left: $shadowOffset;
         bottom: 0;
         right: 0;
+        margin: 0 -1 * $shadowOffset -1 * $shadowOffset 0;
+
+        .bottom-left,
+        .top-right {
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            border-style: solid;
+            border-width: $shadowOffset;
+            position: absolute;
+        }
+        .bottom-left {
+            left: -1 * $shadowOffset;
+            bottom: -1 * $shadowOffset;
+            border-color: $bgColor transparent transparent transparent;
+        }
+
+        .top-right {
+            right: 0;
+            top: -2 * $shadowOffset;
+            border-color: transparent transparent $bgColor transparent;
+        }
     }
 }

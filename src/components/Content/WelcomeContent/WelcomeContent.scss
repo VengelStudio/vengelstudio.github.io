@@ -1,4 +1,4 @@
-@import '../../App/Colors.scss';
+@import '../../App/Globals.scss';
 
 .welcome-content {
     display: flex;
@@ -9,6 +9,12 @@
     font-weight: 100;
     font-size: 15vh;
     text-align: center;
+
+    .vengel-button {
+        margin-top: 20vh;
+        animation: fade-in;
+        animation-duration: 1s;
+    }
 }
 
 @keyframes fade-in {

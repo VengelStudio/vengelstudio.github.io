@@ -1,4 +1,4 @@
-@import './Colors.scss';
+@import './Globals.scss';
 
 body {
     background-color: $secondaryColor;
@@ -10,6 +10,7 @@ body {
     display: none;
 }
 
+html,
 body,
 .root {
     height: 100vh;
