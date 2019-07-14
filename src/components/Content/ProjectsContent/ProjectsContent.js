@@ -12,27 +12,33 @@ const ProjectsContent = () => {
                 bgColor={'#3F3F3F'}
                 backColor={'#0F0F0F'}
                 githubLink={'github.com/VengelStudio/CardmanMultiplayer'}
-                websiteLink={'cardman-multiplayer.herokuapp.com'}
+                website={{
+                    title: 'Live game',
+                    link: 'cardman-multiplayer.herokuapp.com'
+                }}
             >
-                <img src={CardmanLogo} />
+                <img src={CardmanLogo} alt='' />
                 <span>Cardman Multiplayer</span>
             </HorizontalSash>
             <HorizontalSash
                 bgColor={'#457D52'}
                 backColor={'#174D24'}
-                githubLink={'link'}
-                websiteLink={'websiteteet.com'}
+                githubLink={'github.com/VengelStudio/BookmarkChecker'}
+                website={{
+                    title: 'Chrome Web Store',
+                    link: 'tinyurl.com/y2kxnva3'
+                }}
             >
                 <span>Bookmark Checker</span>
-                <img src={BookmarkPurifierLogo} />
+                <img src={BookmarkPurifierLogo} alt='' />
             </HorizontalSash>
             <HorizontalSash
                 bgColor={'#8D3A63'}
                 backColor={'#551E39'}
-                githubLink={'link'}
-                websiteLink={'websiteteet.com'}
+                githubLink={'github.com/VengelStudio/PoznajmySie'}
+                website={{ title: 'Play Store', link: 'tinyurl.com/y1s3a3' }}
             >
-                <img src={PoznajmySieLogo} />
+                <img src={PoznajmySieLogo} alt='' />
                 <span>Poznajmy się</span>
             </HorizontalSash>
         </div>

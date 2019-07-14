@@ -4,7 +4,6 @@ import GithubLogo from '../../../images/icons/github-round.svg'
 import WebLogo from '../../../images/icons/web.svg'
 
 const HorizontalSash = props => {
-    let reversed = props.props || false
     return (
         <div className='horizontal-sash-wrapper'>
             <div className='horizontal-sash'>
@@ -44,12 +43,12 @@ const HorizontalSash = props => {
             </div>
             <div className='side-info'>
                 <p>
-                    <img src={GithubLogo} />
-                    <a href={props.githubLink}>{props.githubLink}</a>
+                    <img src={WebLogo} alt='' />
+                    <a href={props.website.link}>{props.website.title}</a>
                 </p>
                 <p>
-                    <img src={WebLogo} />
-                    <a href={props.githubLink}>{props.websiteLink}</a>
+                    <img src={GithubLogo} alt='' />
+                    <a href={props.githubLink}>Source code</a>
                 </p>
             </div>
         </div>

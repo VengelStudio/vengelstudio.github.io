@@ -42,16 +42,26 @@ $width: 90vw;
                 font-weight: 100;
             }
         }
+    }
 
-        &:nth-child(even) {
-            align-self: flex-end;
+    &:nth-child(even) {
+        align-self: flex-end;
+        flex-direction: row-reverse;
+        svg {
+            transform: rotateZ(180deg) rotateX(180deg);
+        }
+        & > .horizontal-sash > span {
+            left: 16px;
+            right: 0;
+        }
+
+        & > .side-info > p {
+            display: flex;
             flex-direction: row-reverse;
-            svg {
-                transform: rotateZ(180deg) rotateX(180deg);
-            }
-            & > span {
-                left: 8vh;
-                right: 0;
+            justify-content: flex-start;
+
+            img {
+                margin: 0 0 0 0.5em;
             }
         }
     }
@@ -60,6 +70,7 @@ $width: 90vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 16px;
 
         p {
             display: flex;
