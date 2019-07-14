@@ -1,7 +1,7 @@
 @import '../../App/Globals.scss';
 
 $height: 70vh;
-$width: 30vw;
+$width: 60vw;
 
 .vertical-sash {
     position: relative;
@@ -10,6 +10,8 @@ $width: 30vw;
     width: $width;
     background-color: $primaryColor;
     color: $secondaryColor;
+    display: flex;
+    flex-direction: column;
 
     .vertical-sash-back {
         position: absolute;
