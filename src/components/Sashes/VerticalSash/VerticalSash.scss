@@ -5,7 +5,10 @@ $width: 60vw;
 
 .vertical-sash {
     position: relative;
-    display: block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: $height;
     width: $width;
     background-color: $primaryColor;

@@ -42,7 +42,7 @@
 // }
 
 .logo {
-    height: 15vh;
+    height: 20vh;
     width: auto;
 }
 
@@ -60,8 +60,9 @@
     width: 100%;
     a {
         img {
-            height: 1.2em;
-            margin: 0 0.2em;
+            height: 2em;
+            margin: 0 1em;
+            margin-top: 5vh;
             object-fit: cover;
         }
     }
