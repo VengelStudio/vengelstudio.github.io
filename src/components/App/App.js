@@ -1,24 +1,24 @@
-import React from 'react'
-import Page from '../Page/Page'
-import './App.scss'
-import ProjectsContent from '../Content/ProjectsContent/ProjectsContent'
-import UsContent from '../Content/UsContent/UsContent'
-import WelcomeContent from '../Content/WelcomeContent/WelcomeContent'
+import React from "react";
+import "./App.scss";
+import ParallaxBg from "../ParallaxBg/ParallaxBg";
+import FullHeightWrapper from "../FullHeightWrapper/FullHeightWrapper";
+import Header from "../Header/Header";
 
 const App = () => {
-    return (
-        <div className='main'>
-            <Page>
-                <WelcomeContent />
-            </Page>
-            <Page>
-                <ProjectsContent />
-            </Page>
-            <Page>
-                <UsContent />
-            </Page>
-        </div>
-    )
-}
+  return (
+    <div className="main">
+      <ParallaxBg />
+      <FullHeightWrapper>
+        <Header>We are Vengel Studio.</Header>
+      </FullHeightWrapper>
+      <FullHeightWrapper>
+        <Header>test2</Header>
+      </FullHeightWrapper>
+      <FullHeightWrapper>
+        <Header>test3</Header>
+      </FullHeightWrapper>
+    </div>
+  );
+};
 
-export default App
+export default App;
