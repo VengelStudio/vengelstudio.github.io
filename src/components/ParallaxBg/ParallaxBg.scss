@@ -1,33 +1,18 @@
 .background {
   display: flex;
   flex: 1 0 auto;
-  position: relative;
   height: 100vh;
-  transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2.1);
   z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
   & > img {
     position: absolute;
-    // transform: translateZ(-2px) scale(2);
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
   }
 }
-
-// .background {
-//   position: fixed;
-//   z-index: -10;
-//   width: 100vw;
-//   height: 100vh;
-//   perspective: 2px;
-//   overflow: hidden;
-//   & > img {
-//     position: absolute;
-//     transform: translateZ(-2px) scale(2);
-//     height: 100%;
-//     width: 100%;
-//     object-fit: cover;
-//     object-position: center;
-//   }
-// }
