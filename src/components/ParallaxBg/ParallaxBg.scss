@@ -1,6 +1,4 @@
 .background {
-  display: flex;
-  flex: 1 0 auto;
   height: 100vh;
   transform: translateZ(-1px) scale(2.1);
   z-index: -1;
@@ -8,10 +6,21 @@
   left: 0;
   right: 0;
   position: absolute;
+  transition: transform ease-out 1s, height ease-out 1s, filter ease-out 1s;
+
+  &.zoomed {
+    transform: translateZ(-1px) scale(2.5);
+    // filter: blur(4px);
+    position: fixed;
+    & > img {
+      // position: fixed;
+    }
+  }
+
   & > img {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     object-fit: cover;
     object-position: center;
   }
