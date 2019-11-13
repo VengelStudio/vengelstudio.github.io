@@ -11,6 +11,11 @@ const App = () => {
             <ParallaxBg />
             <FullHeightWrapper>
                 <VSheader size="h1">Vengel Studio</VSheader>
+                <VSheader size="h2">Vengel Studio</VSheader>
+                <VSheader size="h3">Vengel Studio</VSheader>
+                <VSheader size="h4">Vengel Studio</VSheader>
+                <VSheader size="h5">Vengel Studio</VSheader>
+                <VSheader size="h6">Vengel Studio</VSheader>
             </FullHeightWrapper>
             <FullHeightWrapper>
                 <Header>test2</Header>
