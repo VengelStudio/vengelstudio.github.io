@@ -3,7 +3,7 @@ import "./VSheader.scss";
 
 export const VSheader = props => {
     let header = React.createElement(
-        props.size,
+        `h${props.size}`,
         { className: "vs-header" },
         props.children
     );
