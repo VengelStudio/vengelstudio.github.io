@@ -1,9 +1,9 @@
 .vs-header {
-  text-shadow: 0 3px 6px #000000;
+  text-shadow: none;
 }
 
-.vs-header.shadow-false {
-  text-shadow: none;
+.vs-header.shadow-true {
+  text-shadow: 0 3px 6px #000000;
 }
 
 h1.vs-header {

@@ -28,7 +28,8 @@
     outline: none;
     //This shadow looks like ugghhhh
     color: #444444;
-    text-shadow: 0 3px 6px #000000;
+
+    text-shadow: none;
     cursor: pointer;
     height: 3em;
     font-size: 4em;
@@ -37,8 +38,8 @@
   }
 }
 
-.navigation-buttons.shadow-false {
+.navigation-buttons.shadow-true {
   & > button {
-    text-shadow: none;
+    text-shadow: 0 3px 6px #000000;
   }
 }
