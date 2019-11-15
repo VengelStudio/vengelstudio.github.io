@@ -14,9 +14,11 @@ body,
 }
 
 .main {
-  perspective: 1px;
+  perspective: 8px;
+  perspective-origin: 50%;
   transform-style: preserve-3d;
-  height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
+  // overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
