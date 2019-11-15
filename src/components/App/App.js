@@ -5,28 +5,27 @@ import FullHeightWrapper from "../FullHeightWrapper/FullHeightWrapper";
 import Header from "../Header/Header";
 import VSheader from "../VSheader/VSheader";
 import Navbar from "../Navbar/Navbar";
+import Hero from "../Hero/Hero";
 
 const App = () => {
-    return (
-        <div className="main">
-            <ParallaxBg />
-            <Navbar />
-            <FullHeightWrapper>
-                <VSheader size="1">Vengel Studio</VSheader>
-                <VSheader size="2">Vengel Studio</VSheader>
-                <VSheader size="3">Vengel Studio</VSheader>
-                <VSheader size="4">Vengel Studio</VSheader>
-                <VSheader size="5">Vengel Studio</VSheader>
-                <VSheader size="6">Vengel Studio</VSheader>
-            </FullHeightWrapper>
-            <FullHeightWrapper>
-                <Header>test2</Header>
-            </FullHeightWrapper>
-            <FullHeightWrapper>
-                <Header>test3</Header>
-            </FullHeightWrapper>
-        </div>
-    );
+  return (
+    <div className="main">
+      <ParallaxBg />
+      <Navbar shadow={false} />
+      <FullHeightWrapper>
+        <VSheader size={2} shadow={false}>
+          Test header
+        </VSheader>
+        <Hero>We are Vengel Studio</Hero>
+      </FullHeightWrapper>
+      <FullHeightWrapper>
+        <Header>test2</Header>
+      </FullHeightWrapper>
+      <FullHeightWrapper>
+        <Header>test3</Header>
+      </FullHeightWrapper>
+    </div>
+  );
 };
 
 export default App;

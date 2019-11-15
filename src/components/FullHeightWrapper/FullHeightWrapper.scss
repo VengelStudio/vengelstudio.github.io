@@ -1,5 +1,8 @@
+@import "../App/Globals.scss";
+
 .full-height {
   height: 100vh;
   width: 100vw;
+  @include flexCenter();
   background-color: rgba(204, 0, 204, 0.219);
 }

@@ -3,32 +3,42 @@
 .navbar,
 .nav-content-wrapper,
 .navigation-buttons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
-    position: fixed;
-    width: 100%;
-    height: 8em;
-    justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 8em;
+  justify-content: center;
 }
 
 .nav-content-wrapper {
-    width: 95%;
-    justify-content: space-between;
+  width: 95%;
+  justify-content: space-between;
 }
 
 .navigation-buttons {
-    justify-content: space-between;
-    width: 40%;
+  justify-content: space-between;
+  width: 40%;
 
-    & > button {
-        outline: none;
-        cursor: pointer;
-        height: 3em;
-        font-size: 4em;
-        border: none;
-        background: none;
-    }
+  & > button {
+    font-weight: 100;
+    outline: none;
+    //This shadow looks like ugghhhh
+    color: #444444;
+    text-shadow: 0 3px 6px #000000;
+    cursor: pointer;
+    height: 3em;
+    font-size: 4em;
+    border: none;
+    background: none;
+  }
+}
+
+.navigation-buttons.shadow-false {
+  & > button {
+    text-shadow: none;
+  }
 }
