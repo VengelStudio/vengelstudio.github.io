@@ -4,9 +4,4 @@
   width: 100%;
   height: 100vh;
   @include flexCenter();
-  background-color: rgba(204, 0, 204, 0.219);
-
-  &:nth-of-type(odd) {
-    background-color: rgba(0, 204, 44, 0.219);
-  }
 }
