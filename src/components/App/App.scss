@@ -9,16 +9,11 @@ body {
 html,
 body,
 .root {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .main {
-  perspective: 8px;
-  perspective-origin: 50%;
-  transform-style: preserve-3d;
-  overflow-x: hidden;
-  // overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
