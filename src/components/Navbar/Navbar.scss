@@ -8,6 +8,7 @@
 }
 
 .logo {
+  transition: height 0.7s;
   &.downsize {
     height: 3vh;
     background-color: white;
@@ -19,6 +20,7 @@
   width: 100%;
   height: 8em;
   justify-content: center;
+  transition: height 0.7s;
   &.downsize {
     height: 6em;
     font-size: 0.4em;
@@ -35,6 +37,7 @@
 .navigation-buttons {
   justify-content: space-between;
   width: 40%;
+  transition: width 0.7s;
 
   &.downsize {
     width: 30%;

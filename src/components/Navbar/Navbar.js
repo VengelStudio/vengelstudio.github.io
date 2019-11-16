@@ -3,7 +3,7 @@ import "./Navbar.scss";
 import { getClassNameWithSize } from "./Utilities.js";
 import VSLogo from "../../assets/images/vengel-logo.svg";
 
-const scrollZoomTrigger = 500;
+const scrollZoomTrigger = 300;
 
 class Navbar extends React.Component {
   state = {
