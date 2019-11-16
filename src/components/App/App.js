@@ -25,7 +25,7 @@ const App = () => {
         <Text size={2} weight={700}>
           Test text
         </Text>
-        <Text size={3} weigth={400}>
+        <Text size={3} weight={400}>
           Test text
         </Text>
         <Text size={4} weigth={600}>

@@ -7,11 +7,24 @@
   align-items: center;
 }
 
+.logo {
+  &.downsize {
+    height: 3vh;
+    background-color: white;
+  }
+}
+
 .navbar {
   position: fixed;
   width: 100%;
   height: 8em;
   justify-content: center;
+  &.downsize {
+    height: 6em;
+    font-size: 0.4em;
+    background-color: rgb(37, 37, 37);
+    color: white;
+  }
 }
 
 .nav-content-wrapper {
@@ -23,12 +36,18 @@
   justify-content: space-between;
   width: 40%;
 
+  &.downsize {
+    width: 30%;
+    & > button {
+      color: white;
+    }
+  }
+
   & > button {
     font-weight: 100;
     outline: none;
     //This shadow looks like ugghhhh
     color: #444444;
-
     text-shadow: none;
     cursor: pointer;
     height: 3em;
