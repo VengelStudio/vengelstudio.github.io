@@ -6,6 +6,7 @@ import VSheader from "../VSheader/VSheader";
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
 import Text from "../Text/Text";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 const App = () => {
   return (
@@ -36,6 +37,27 @@ const App = () => {
         <VSheader size={4} shadow={false}>
           Test header
         </VSheader>
+        <ProjectCard
+          title={"Cardman Multiplayer"}
+          description={
+            "A combination of a traditional hangman game and a card game"
+          }
+          screenshot={"https://miro.medium.com/max/3016/0*i1XbVjul86E_CSyf.jpg"}
+        />
+        <ProjectCard
+          title={"Cardman Multiplayer"}
+          description={
+            "A combination of a traditional hangman game and a card game"
+          }
+          screenshot={"https://miro.medium.com/max/3016/0*i1XbVjul86E_CSyf.jpg"}
+        />
+        <ProjectCard
+          title={"Cardman Multiplayer"}
+          description={
+            "A combination of a traditional hangman game and a card game"
+          }
+          screenshot={"https://miro.medium.com/max/3016/0*i1XbVjul86E_CSyf.jpg"}
+        />
       </FullHeightWrapper>
     </ParallaxContainer>
   );

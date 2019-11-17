@@ -1,0 +1,46 @@
+@import "../App/Globals.scss";
+
+.card-wrapper {
+  background-color: white;
+  margin: 3em;
+  max-width: 12vw;
+  height: 40vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.project-screenshot {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100%;
+  background-color: black;
+}
+
+.project-title {
+  * {
+    margin: 0;
+    margin-top: 3vh;
+  }
+}
+
+.project-info {
+  text-align: center;
+  color: black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+  background-color: white;
+}
+
+.project-description {
+  word-wrap: break-word;
+}
+
+.screenshot {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 12vw;
+  height: 100%;
+}
