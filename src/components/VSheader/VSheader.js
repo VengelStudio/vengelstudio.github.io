@@ -7,7 +7,7 @@ export const VSheader = props => {
     { className: `vs-header shadow-${props.shadow}` },
     props.children
   );
-  return <div>{header}</div>;
+  return <React.Fragment>{header}</React.Fragment>;
 };
 
 export default VSheader;

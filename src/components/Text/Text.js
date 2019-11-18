@@ -7,7 +7,7 @@ export const Text = props => {
     { className: `text text-size${props.size} text-weight-${props.weight}` },
     props.children
   );
-  return <div>{text}</div>;
+  return <React.Fragment>{text}</React.Fragment>;
 };
 
 export default Text;
