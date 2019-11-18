@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import { getClassNameWithSize } from "./Utilities.js";
 import VSLogo from "../../assets/images/vengel-logo.svg";
+import Text from "../Text/Text";
 
 const scrollZoomTrigger = 300;
 
@@ -37,9 +38,21 @@ class Navbar extends React.Component {
               this.state.isDownsize
             )}
           >
-            <button>About</button>
-            <button>Projects</button>
-            <button>Contact</button>
+            <button>
+              <Text size={2} weight={300}>
+                About
+              </Text>
+            </button>
+            <button>
+              <Text size={2} weight={300}>
+                Projects
+              </Text>
+            </button>
+            <button>
+              <Text size={2} weight={300}>
+                Contact
+              </Text>
+            </button>
           </div>
         </div>
       </div>

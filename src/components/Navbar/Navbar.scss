@@ -1,5 +1,8 @@
 @import "../App/Globals.scss";
 
+$navbar-button-spacing: 40px;
+$navbar-button-spacing-downsize: 60px;
+
 .navbar,
 .nav-content-wrapper,
 .navigation-buttons {
@@ -8,10 +11,10 @@
 }
 
 .logo {
-  transition: height 0.7s;
+  transition: height 0.2s, filter 0.7s ease-in;
   &.downsize {
     height: 3vh;
-    background-color: white;
+    filter: invert(100%) brightness(2);
   }
 }
 
@@ -20,11 +23,12 @@
   width: 100%;
   height: 8em;
   justify-content: center;
-  transition: height 0.7s;
+  transition: height 0.7s, background-color 0.7s;
+  background-color: rgba(37, 37, 37, 0);
   &.downsize {
     height: 6em;
     font-size: 0.4em;
-    background-color: rgb(37, 37, 37);
+    background-color: rgba(37, 37, 37, 1);
     color: white;
   }
 }
@@ -36,27 +40,25 @@
 
 .navigation-buttons {
   justify-content: space-between;
-  width: 40%;
   transition: width 0.7s;
 
-  &.downsize {
-    width: 30%;
-    & > button {
-      color: white;
+  & > button {
+    cursor: pointer;
+    @include cleanButton();
+    margin-right: $navbar-button-spacing;
+    &:last-child {
+      margin-right: 0px;
     }
   }
 
-  & > button {
-    font-weight: 100;
-    outline: none;
-    //This shadow looks like ugghhhh
-    color: #444444;
-    text-shadow: none;
-    cursor: pointer;
-    height: 3em;
-    font-size: 4em;
-    border: none;
-    background: none;
+  &.downsize {
+    & > button {
+      margin-right: $navbar-button-spacing-downsize;
+      color: white;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
   }
 }
 

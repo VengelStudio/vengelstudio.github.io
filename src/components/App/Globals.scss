@@ -6,7 +6,12 @@ $primaryBg: #1d1d1d;
 $shadowOffset: 10px;
 
 @mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin cleanButton {
+  border: none;
+  background: none;
 }
