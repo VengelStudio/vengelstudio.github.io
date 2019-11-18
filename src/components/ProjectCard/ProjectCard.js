@@ -16,7 +16,7 @@ const ProjectCard = props => {
         <div className="project-description">
           <Text size={4}>{props.description}</Text>
         </div>
-        <button>Learn more...</button>
+        <p>There will be button component there</p>
       </div>
     </div>
   );
