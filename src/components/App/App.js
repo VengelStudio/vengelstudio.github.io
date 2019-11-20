@@ -30,9 +30,6 @@ const App = () => {
         <Text size={3} weight={400}>
           Test text
         </Text>
-        <Text size={4} weigth={600}>
-          Test text
-        </Text>
       </FullHeightWrapper>
       <FullHeightWrapper>
         <ProjectCard
