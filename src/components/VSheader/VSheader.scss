@@ -1,5 +1,8 @@
+@import "../App/Globals.scss";
+
 .vs-header {
   text-shadow: none;
+  color: $primaryText;
 }
 
 .vs-header.shadow-true {

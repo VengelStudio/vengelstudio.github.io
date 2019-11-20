@@ -1,5 +1,8 @@
+@import "../App/Globals.scss";
+
 .text {
   font-size: 3em;
+  color: $primaryText;
   margin: 0;
 }
 
