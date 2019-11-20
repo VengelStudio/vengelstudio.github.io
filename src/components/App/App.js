@@ -8,6 +8,7 @@ import Hero from "../Hero/Hero";
 import Text from "../Text/Text";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import Cardman from "../../assets/images/projects/cardman.png";
+import ContactSection from "../Sections/ContactSection/ContactSection";
 
 const App = () => {
   return (
@@ -53,6 +54,9 @@ const App = () => {
           }
           screenshot={Cardman}
         />
+      </FullHeightWrapper>
+      <FullHeightWrapper>
+        <ContactSection />
       </FullHeightWrapper>
     </ParallaxContainer>
   );

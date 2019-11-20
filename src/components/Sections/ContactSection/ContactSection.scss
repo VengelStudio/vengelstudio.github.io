@@ -1,0 +1,14 @@
+section.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: stretch;
+
+  div.person {
+    margin: 70px 0;
+  }
+
+  & > .vs-header {
+    align-self: center;
+  }
+}
