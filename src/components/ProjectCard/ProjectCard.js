@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCard.scss";
-import VSheader from "../VSheader/VSheader";
-import Text from "../Text/Text";
+import VSheader from "../Shared/Header/Header";
+import Text from "../Shared/Text/Text";
 
 const ProjectCard = props => {
   return (

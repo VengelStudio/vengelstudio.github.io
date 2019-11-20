@@ -1,22 +1,22 @@
 import React from "react";
-import "./VSheader.scss";
+import "./Header.scss";
 import PropTypes from "prop-types";
 
-export const VSheader = props => {
+export const Header = props => {
   let header = React.createElement(
     `h${props.size}`,
-    { className: `vs-header shadow-${props.shadow}` },
+    { className: `header shadow-${props.shadow}` },
     props.children
   );
   return <React.Fragment>{header}</React.Fragment>;
 };
-VSheader.propTypes = {
+Header.propTypes = {
   size: PropTypes.number,
   shadow: PropTypes.bool
 };
-VSheader.defaultProps = {
+Header.defaultProps = {
   size: 4,
   shadow: false
 };
 
-export default VSheader;
+export default Header;

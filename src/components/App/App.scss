@@ -1,8 +1,7 @@
-@import "./Globals.scss";
+@import "../Shared/Globals.scss";
 
 body {
   background-color: $secondaryColor;
-  color: $primaryText;
   font-family: "Cairo", sans-serif;
 }
 
