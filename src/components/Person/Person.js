@@ -1,7 +1,7 @@
 import React from "react";
 import "./Person.scss";
-import Text from "../Text/Text";
-import VSheader from "../VSheader/VSheader";
+import Text from "../Shared/Text/Text";
+import VSheader from "../Shared/Header/Header";
 
 class Person extends React.Component {
   render() {

@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import { getClassNameWithSize } from "./Utilities.js";
 import VSLogo from "../../assets/images/vengel-logo.svg";
-import Text from "../Text/Text";
+import Text from "../Shared/Text/Text";
 
 const scrollZoomTrigger = 300;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectsSection.scss";
-import VSheader from "../../VSheader/VSheader";
+import VSheader from "../../Shared/Header/Header";
 import ProjectCard from "../../ProjectCard/ProjectCard";
 import Cardman from "../../../assets/images/projects/cardman.png";
 

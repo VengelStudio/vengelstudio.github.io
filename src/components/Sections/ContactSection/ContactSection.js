@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactSection.scss";
-import VSheader from "../../VSheader/VSheader";
+import VSheader from "../../Shared/Header/Header";
 import Person from "../../Person/Person";
 
 const ContactSection = () => {
