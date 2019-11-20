@@ -4,7 +4,7 @@
   background-color: white;
   margin-right: 10em;
   max-width: 14vw;
-  height: 45vh;
+  max-height: 45vh;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 .project-screenshot {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 100%;
+  height: 50%;
   background-color: black;
 }
 
@@ -32,12 +32,17 @@
   color: black;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  height: 100%;
+  height: 50%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
+
+  & .vs-header,
+  & .text {
+    color: black;
+  }
 }
 
 .project-description {
