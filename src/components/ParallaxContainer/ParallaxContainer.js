@@ -32,7 +32,7 @@ class ParallaxContainer extends React.Component {
     return (
       <div className="parallax-container">
         <div className={getBgClass()}>
-          <img src="/static/bg.png" />
+          <img src="/static/bg.png" alt="background" />
         </div>
         <div className="foreground">{this.props.children}</div>
       </div>

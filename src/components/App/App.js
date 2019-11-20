@@ -6,6 +6,7 @@ import Navbar from "../Navbar/Navbar";
 import Hero from "../Shared/Hero/Hero";
 import ContactSection from "../Sections/ContactSection/ContactSection";
 import ProjectsSection from "../Sections/ProjectsSection/ProjectsSection";
+import FooterSection from "../Sections/FooterSection/FooterSection";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <FullHeightWrapper>
         <ContactSection />
       </FullHeightWrapper>
+      <FooterSection />
     </ParallaxContainer>
   );
 };
