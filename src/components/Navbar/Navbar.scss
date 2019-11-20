@@ -26,6 +26,7 @@ $navbar-button-spacing-downsize: 60px;
   transition: height 0.7s, background-color 0.7s;
   background-color: rgba(37, 37, 37, 0);
   z-index: 1000;
+
   &.downsize {
     height: 6em;
     font-size: 0.4em;
@@ -42,7 +43,9 @@ $navbar-button-spacing-downsize: 60px;
 .navigation-buttons {
   justify-content: space-between;
   transition: width 0.7s;
-
+  & .text {
+    color: rgb(37, 37, 37);
+  }
   & > button {
     cursor: pointer;
     @include cleanButton();
@@ -55,7 +58,9 @@ $navbar-button-spacing-downsize: 60px;
   &.downsize {
     & > button {
       margin-right: $navbar-button-spacing-downsize;
-      color: white;
+      & .text {
+        color: white;
+      }
       &:last-child {
         margin-right: 0px;
       }
