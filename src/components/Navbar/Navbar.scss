@@ -44,7 +44,7 @@ $navbar-button-spacing-downsize: 60px;
   justify-content: space-between;
   transition: width 0.7s;
   & .text {
-    color: rgb(37, 37, 37);
+    color: $primaryColor;
   }
   & > button {
     cursor: pointer;
@@ -59,7 +59,7 @@ $navbar-button-spacing-downsize: 60px;
     & > button {
       margin-right: $navbar-button-spacing-downsize;
       & .text {
-        color: white;
+        color: $primaryText;
       }
       &:last-child {
         margin-right: 0px;
