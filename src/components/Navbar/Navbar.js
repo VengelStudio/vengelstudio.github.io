@@ -31,6 +31,7 @@ class Navbar extends React.Component {
           <img
             src={VSLogo}
             className={getClassNameWithSize("logo", this.state.isDownsize)}
+            alt="logo"
           ></img>
           <div
             className={getClassNameWithSize(

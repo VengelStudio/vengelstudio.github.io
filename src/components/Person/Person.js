@@ -34,7 +34,7 @@ const Person = props => {
         </div>
       </div>
       <div className="person-img">
-        <img src={props.imgUrl}></img>
+        <img src={props.imgUrl} alt="person"></img>
       </div>
     </div>
   );
