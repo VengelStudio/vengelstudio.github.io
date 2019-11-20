@@ -18,6 +18,19 @@
     }
   }
 
+  $icon-horizontal-spacing: 2em;
+  & .person-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4em;
+    & > div {
+      margin-right: $icon-horizontal-spacing;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
   & .person-img {
     align-self: stretch;
     width: 30%;
