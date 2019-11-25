@@ -3,9 +3,13 @@ section.contact {
   flex-direction: column;
   width: 100%;
   align-items: stretch;
+  margin-bottom: 70px;
 
-  div.person {
-    margin: 70px 0;
+  & > .person {
+    margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   & > .header {
