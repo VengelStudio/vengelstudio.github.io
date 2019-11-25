@@ -2,6 +2,7 @@ import React from "react";
 import "./ProjectCard.scss";
 import Header from "../Shared/Header/Header";
 import Text from "../Shared/Text/Text";
+import Button from "../Button/Button";
 
 const ProjectCard = props => {
   return (
@@ -16,7 +17,9 @@ const ProjectCard = props => {
         <div className="project-description">
           <Text size={4}>{props.description}</Text>
         </div>
-        <p>There will be button component there</p>
+        <Button size={4} type="learn">
+          Learn more..
+        </Button>
       </div>
     </div>
   );
