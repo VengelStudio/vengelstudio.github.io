@@ -1,8 +1,0 @@
-@import "../Shared/Globals.scss";
-
-.full-height {
-  width: 100%;
-  min-height: 100vh;
-  @include flexCenter();
-  flex-direction: column;
-}
