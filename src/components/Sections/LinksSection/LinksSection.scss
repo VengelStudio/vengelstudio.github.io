@@ -5,7 +5,10 @@ section.links {
   align-items: stretch;
   margin-bottom: 70px;
 
-  & > .person {
+  & > .link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 1em;
     &:last-child {
       margin-bottom: 0;

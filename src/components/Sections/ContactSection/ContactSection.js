@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactSection.scss";
-import VSheader from "../../Shared/Header/Header";
+import Header from "../../Shared/Header/Header";
 import Person from "../../Person/Person";
 import Github from "../../../assets/icons/github.svg";
 import Linkedin from "../../../assets/icons/linkedin.svg";
@@ -21,9 +21,9 @@ const ContactSection = () => {
   };
   return (
     <section className="contact">
-      <VSheader size={2} shadow={true}>
+      <Header size={2} shadow={true}>
         About us
-      </VSheader>
+      </Header>
       <Person
         name={"Bartosz"}
         surname={"Kępka"}

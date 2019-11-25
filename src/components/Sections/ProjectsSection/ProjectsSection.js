@@ -1,15 +1,15 @@
 import React from "react";
 import "./ProjectsSection.scss";
-import VSheader from "../../Shared/Header/Header";
+import Header from "../../Shared/Header/Header";
 import ProjectCard from "../../ProjectCard/ProjectCard";
 import Cardman from "../../../assets/images/projects/cardman.png";
 
 const ProjectsSection = () => {
   return (
     <section className="projects">
-      <VSheader size={2} shadow={true}>
+      <Header size={2} shadow={true}>
         Our projects
-      </VSheader>
+      </Header>
       <div className="carousel">
         <ProjectCard
           title={"Cardman Multiplayer"}

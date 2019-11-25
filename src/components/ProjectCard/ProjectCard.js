@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectCard.scss";
-import VSheader from "../Shared/Header/Header";
+import Header from "../Shared/Header/Header";
 import Text from "../Shared/Text/Text";
 
 const ProjectCard = props => {
@@ -11,7 +11,7 @@ const ProjectCard = props => {
       </div>
       <div className="project-info">
         <div className="project-title">
-          <VSheader size={6}>{props.title}</VSheader>
+          <Header size={6}>{props.title}</Header>
         </div>
         <div className="project-description">
           <Text size={4}>{props.description}</Text>
