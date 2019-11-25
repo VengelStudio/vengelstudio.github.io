@@ -1,7 +1,7 @@
 import React from "react";
 import "./Person.scss";
 import Text from "../Shared/Text/Text";
-import VSheader from "../Shared/Header/Header";
+import Header from "../Shared/Header/Header";
 import Icon from "../Shared/Icon/Icon";
 
 const Person = props => {
@@ -20,16 +20,16 @@ const Person = props => {
   return (
     <div className="person">
       <div className="person-info">
-        <VSheader size={3}>
+        <Header size={3}>
           {props.name}
           <br />
           {props.surname}
-        </VSheader>
+        </Header>
         <br></br>
         <Text size={3}>{props.description}</Text>
         <div className="person-icons">
-          {getClickableIcons().map(el => (
-            <div>{el}</div>
+          {getClickableIcons().map((el, i) => (
+            <div key={i}>{el}</div>
           ))}
         </div>
       </div>
