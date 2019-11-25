@@ -7,6 +7,7 @@ import Hero from "../Shared/Hero/Hero";
 import ContactSection from "../Sections/ContactSection/ContactSection";
 import ProjectsSection from "../Sections/ProjectsSection/ProjectsSection";
 import FooterSection from "../Sections/FooterSection/FooterSection";
+import Button from "../Button/Button";
 
 const App = () => {
   return (

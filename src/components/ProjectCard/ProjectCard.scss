@@ -3,8 +3,10 @@
 .card-wrapper {
   background-color: white;
   margin-right: 10em;
+  min-width: 10vw;
+  min-height: 45vh;
   max-width: 14vw;
-  max-height: 45vh;
+  max-height: 60vh;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -22,6 +24,7 @@
 
 .project-title {
   * {
+    white-space: nowrap;
     margin: 0;
     margin-top: 3vh;
   }

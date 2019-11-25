@@ -1,7 +1,8 @@
 import React from "react";
 import "./ProjectCard.scss";
-import VSheader from "../Shared/Header/Header";
+import Header from "../Shared/Header/Header";
 import Text from "../Shared/Text/Text";
+import Button from "../Button/Button";
 
 const ProjectCard = props => {
   return (
@@ -11,12 +12,14 @@ const ProjectCard = props => {
       </div>
       <div className="project-info">
         <div className="project-title">
-          <VSheader size={6}>{props.title}</VSheader>
+          <Header size={6}>{props.title}</Header>
         </div>
         <div className="project-description">
           <Text size={4}>{props.description}</Text>
         </div>
-        <p>There will be button component there</p>
+        <Button size={4} type="learn">
+          Learn more..
+        </Button>
       </div>
     </div>
   );
