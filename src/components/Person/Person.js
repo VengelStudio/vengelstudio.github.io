@@ -20,13 +20,13 @@ const Person = props => {
   return (
     <div className="person">
       <div className="person-info">
-        <Header size={3}>
+        <Header size={4}>
           {props.name}
           <br />
           {props.surname}
         </Header>
         <br></br>
-        <Text size={3}>{props.description}</Text>
+        <Text size={5}>{props.description}</Text>
         <div className="person-icons">
           {getClickableIcons().map((el, i) => (
             <div key={i}>{el}</div>
