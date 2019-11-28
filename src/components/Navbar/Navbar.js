@@ -40,17 +40,17 @@ class Navbar extends React.Component {
             )}
           >
             <button>
-              <Text size={2} weight={300}>
+              <Text size={3} weight={300}>
                 About
               </Text>
             </button>
             <button>
-              <Text size={2} weight={300}>
+              <Text size={3} weight={300}>
                 Projects
               </Text>
             </button>
             <button>
-              <Text size={2} weight={300}>
+              <Text size={3} weight={300}>
                 Contact
               </Text>
             </button>
