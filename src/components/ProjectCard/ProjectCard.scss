@@ -3,10 +3,8 @@
 .card-wrapper {
   background-color: white;
   margin-right: 10em;
-  min-width: 10vw;
-  min-height: 45vh;
-  max-width: 14vw;
-  max-height: 60vh;
+  width: 14vw;
+  height: 40vh;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -20,17 +18,19 @@
   border-top-right-radius: 20px;
   height: 50%;
   background-color: black;
+  transition: height 0.5s;
 }
 
 .project-title {
+  margin-bottom: 2vh;
   * {
     white-space: nowrap;
     margin: 0;
-    margin-top: 3vh;
   }
 }
 
 .project-info {
+  position: relative;
   text-align: center;
   color: black;
   border-bottom-left-radius: 20px;
@@ -39,7 +39,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
 
   & .header,
@@ -50,6 +50,7 @@
 
 .project-description {
   word-wrap: break-word;
+  margin-bottom: 3vh;
 }
 
 .screenshot {
@@ -57,4 +58,16 @@
   border-top-right-radius: 20px;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1600px) {
+  .project-title {
+    font-size: 1vh;
+  }
+  .project-description {
+    font-size: 1vh;
+  }
+  button.button-type-learn {
+    font-size: 2vh;
+  }
 }
