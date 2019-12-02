@@ -1,15 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 
-const withScrollNotifier = WrappedComponent => {
-  return class withScrollNotifier extends React.Component {
-    constructor(props) {
-      super(props);
-      this.ref = React.createRef();
-    }
-    render() {
-      return <WrappedComponent {...this.props} ref={this.ref} />;
-    }
-  };
+const ScrollNotifier = props => {
+  const refContainer = useRef(null);
+  console.log(refContainer);
+  return (
+    <div className="scroll-notifier" ref={refContainer}>
+      {props.children}
+    </div>
+  );
 };
 
-export default withScrollNotifier;
+export default ScrollNotifier;

@@ -5,16 +5,7 @@ import Person from "../../Person/Person";
 import Github from "../../../assets/icons/github.svg";
 import Linkedin from "../../../assets/icons/linkedin.svg";
 import Email from "../../../assets/icons/gmail.svg";
-// import ScrollNotifier from "../../Shared/ScrollNotifier/ScrollNotifier";
-
-const withScrollNotifier = WrappedComponent => {
-  class withScrollNotifier extends React.Component {
-    render() {
-      return <WrappedComponent {...this.props} />;
-    }
-  }
-  return withScrollNotifier;
-};
+import ScrollNotifier from "../../Shared/ScrollNotifier/ScrollNotifier";
 
 const linksWithIcons = {
   Bartosz: [
@@ -28,20 +19,6 @@ const linksWithIcons = {
     { goToUrl: "#", iconUrl: Email }
   ]
 };
-
-const originalBartosz = (
-  <Person
-    name={"Bartosz"}
-    surname={"Kępka"}
-    description={"Automation and robotics student in Warsaw."}
-    imgUrl={
-      "https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.0-9/s960x960/46456320_1110754145765807_1941359461566251008_o.jpg?_nc_cat=102&_nc_oc=AQmWbCutLsT0gdUCB1mu_J36l7d31vtlO0zQTrOjcfedBnLX5pMCimPJdpOUjFXSqaU&_nc_ht=scontent.fwaw7-1.fna&oh=ba3e34d1e6460c0a492c24e3497c07ed&oe=5E8AA790"
-    }
-    iconsWithLinks={linksWithIcons.Bartosz}
-  />
-);
-
-const Bartosz = withScrollNotifier(originalBartosz);
 
 class ContactSection extends React.Component {
   state = { elScrolledIntoView: null };
@@ -64,7 +41,17 @@ class ContactSection extends React.Component {
         <Header size={2} shadow={true}>
           About us
         </Header>
-        {Bartosz}
+        <ScrollNotifier>
+          <Person
+            name={"Bartosz"}
+            surname={"Kępka"}
+            description={"Automation and robotics student in Warsaw."}
+            imgUrl={
+              "https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.0-9/s960x960/46456320_1110754145765807_1941359461566251008_o.jpg?_nc_cat=102&_nc_oc=AQmWbCutLsT0gdUCB1mu_J36l7d31vtlO0zQTrOjcfedBnLX5pMCimPJdpOUjFXSqaU&_nc_ht=scontent.fwaw7-1.fna&oh=ba3e34d1e6460c0a492c24e3497c07ed&oe=5E8AA790"
+            }
+            iconsWithLinks={linksWithIcons.Bartosz}
+          />
+        </ScrollNotifier>
 
         <Person
           name={"Łukasz"}
