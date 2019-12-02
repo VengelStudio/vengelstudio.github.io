@@ -1,6 +1,7 @@
 @import "../Globals.scss";
 
 .hero {
+  opacity: 0;
   color: $primaryText;
   font-size: 12vmin;
   text-shadow: 0 6px 6px #00000061;
