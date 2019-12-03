@@ -1,0 +1,12 @@
+@import "../../components/Shared/Globals.scss";
+
+.header {
+  color: $primaryColor;
+}
+
+div.header-wrapper.with-shadow-inverted {
+  background-color: #000;
+  &.header {
+    color: #fff;
+  }
+}
