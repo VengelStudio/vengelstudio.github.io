@@ -1,6 +1,7 @@
 @import "../Shared/Globals.scss";
 
 .person {
+  overflow-x: hidden;
   display: flex;
   flex-direction: row;
   background-color: #fff;
