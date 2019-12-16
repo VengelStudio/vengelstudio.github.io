@@ -1,22 +1,35 @@
 import React, { useEffect, useRef } from "react";
 import "./Person.scss";
-import { TweenMax, Linear, TimelineMax } from "gsap";
+import { TweenMax, Linear, TimelineMax, Power2 } from "gsap";
 import Text from "../Shared/Text/Text";
 import Header from "../Shared/Header/Header";
 import Icon from "../Shared/Icon/Icon";
+import ScrollMagic from "scrollmagic";
 
 const Person = props => {
-  const tl = new TimelineMax({ delay: 0 });
+  const tl = new TimelineMax();
+  const controller = new ScrollMagic.Controller();
   let personImg = useRef(null);
   let contactBar = useRef(null);
 
+  let scene = new ScrollMagic.Scene({
+    triggerElement: contactBar
+  })
+    .setTween(personImg, 0.5, { backgroundColor: "green", scale: 2.5 })
+    .addTo(controller);
+
   useEffect(() => {
     tl.set(personImg, { opacity: 0 });
-    tl.fromTo(contactBar, 1, { x: -12000, ease: Linear.ease }, { x: 0 }).fromTo(
+    tl.fromTo(
+      contactBar,
+      1,
+      { x: -12000, ease: Power2.easeOut },
+      { x: 0 }
+    ).fromTo(
       personImg,
       1,
-      { x: 900, opacity: 0, ease: Linear.ease },
-      { x: 0, opacity: 1, ease: Linear.ease }
+      { x: 300, opacity: 0, ease: Power2.easeOut },
+      { x: 0, opacity: 1, ease: Power2.easeOut }
     );
   });
 
@@ -35,6 +48,7 @@ const Person = props => {
   return (
     <div
       className="person"
+      id="stage"
       ref={element => {
         contactBar = element;
       }}
