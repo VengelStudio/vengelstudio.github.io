@@ -1,3 +1,5 @@
+@import "../Shared/Globals.scss";
+
 .button {
   cursor: pointer;
 }
@@ -20,7 +22,7 @@
 
 .button-type-learn {
   border: none;
-  color: #fe1c71;
+  color: $action;
   font-weight: 200;
   background: none;
 }

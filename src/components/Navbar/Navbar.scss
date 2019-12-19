@@ -30,7 +30,7 @@ $navbar-button-spacing-downsize: 60px;
   &.downsize {
     height: 6em;
     font-size: 0.4em;
-    background-color: rgba(37, 37, 37, 1);
+    background-color: $navbar-downsize-bg;
     color: white;
   }
 }
