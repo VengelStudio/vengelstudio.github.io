@@ -1,3 +1,5 @@
+@import "../../Shared/Globals.scss";
+
 section.contact {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@ section.contact {
 
   & > h2.header {
     align-self: center;
-    @media (max-width: 700px) {
+    @media (max-width: #{$flow-break-width}) {
       font-size: 3em;
     }
   }

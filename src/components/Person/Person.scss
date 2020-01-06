@@ -50,7 +50,7 @@
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: #{$flow-break-width}) {
     flex-direction: column-reverse;
     padding: 0;
     .person-info {
