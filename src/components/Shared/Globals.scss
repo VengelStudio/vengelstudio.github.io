@@ -26,3 +26,13 @@ $primaryBg: #1d1d1d;
   border: none;
   background: none;
 }
+
+@mixin fontSizeTransition {
+  transition: font-size ease-in-out 0.5s;
+}
+
+/* Project cards */
+$card-width: 200px;
+$card-height: 320px;
+$card-vertical-spacing: 40px;
+$flow-break-width: 768px;

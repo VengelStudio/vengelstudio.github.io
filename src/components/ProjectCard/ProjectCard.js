@@ -15,9 +15,9 @@ const ProjectCard = props => {
           <Header size={6}>{props.title}</Header>
         </div>
         <div className="project-description">
-          <Text size={4}>{props.description}</Text>
+          <Text size={6}>{props.description}</Text>
         </div>
-        <Button size={4} type="learn">
+        <Button size={6} type="learn">
           Learn more..
         </Button>
       </div>

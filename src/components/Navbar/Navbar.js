@@ -3,16 +3,24 @@ import "./Navbar.scss";
 import { getClassNameWithSize } from "./Utilities.js";
 import VSLogo from "../../assets/images/vengel-logo.svg";
 import Text from "../Shared/Text/Text";
+import HamburgerMenuIcon from "../../assets/icons/hamburger.svg";
+
 import { navbarScrollTrigger } from "../layoutConfig";
 
 class Navbar extends React.Component {
   state = {
-    isDownsize: false
+    isDownsize: false,
+    isMenuToggled: false
   };
 
   handleScroll = e => {
     const { scrollTop } = e.srcElement.scrollingElement;
     this.setState({ isDownsize: scrollTop > navbarScrollTrigger });
+  };
+
+  handleMenuToggle = e => {
+    e.preventDefault();
+    this.setState({ isMenuToggled: !this.state.isMenuToggled });
   };
 
   componentDidMount() {
@@ -33,10 +41,12 @@ class Navbar extends React.Component {
             alt="logo"
           ></img>
           <div
-            className={getClassNameWithSize(
-              `navigation-buttons shadow-${this.props.shadow}`,
-              this.state.isDownsize
-            )}
+            className={
+              getClassNameWithSize(
+                `navigation-buttons shadow-${this.props.shadow}`,
+                this.state.isDownsize
+              ) + (this.state.isMenuToggled ? " toggled" : "")
+            }
           >
             <button>
               <Text size={2} weight={300}>
@@ -54,6 +64,9 @@ class Navbar extends React.Component {
               </Text>
             </button>
           </div>
+          <button className="menu-toggle-btn" onClick={this.handleMenuToggle}>
+            <img src={HamburgerMenuIcon} />
+          </button>
         </div>
       </div>
     );

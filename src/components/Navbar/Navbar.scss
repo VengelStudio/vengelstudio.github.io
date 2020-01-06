@@ -12,9 +12,20 @@ $navbar-button-spacing-downsize: 60px;
 
 .logo {
   transition: height 0.2s, filter 0.7s ease-in;
-  &.downsize {
-    height: 3vh;
-    filter: invert(100%) brightness(2);
+
+  @media (max-width: #{$flow-break-width}) {
+    height: 56px;
+    transition: opacity 0.3s ease-in-out;
+    &.downsize {
+      opacity: 0;
+    }
+  }
+
+  @media (min-width: #{$flow-break-width}) {
+    &.downsize {
+      height: 3vh;
+      filter: invert(100%) brightness(2);
+    }
   }
 }
 
@@ -27,17 +38,38 @@ $navbar-button-spacing-downsize: 60px;
   background-color: rgba(37, 37, 37, 0);
   z-index: 1000;
 
-  &.downsize {
-    height: 6em;
-    font-size: 0.4em;
-    background-color: $navbar-downsize-bg;
-    color: white;
+  @media (min-width: #{$flow-break-width}) {
+    &.downsize {
+      height: 6em;
+      font-size: 0.4em;
+      background-color: rgba(37, 37, 37, 1);
+      color: white;
+    }
   }
 }
 
 .nav-content-wrapper {
   width: 95%;
   justify-content: space-between;
+
+  button.menu-toggle-btn {
+    display: none;
+    @media (max-width: #{$flow-break-width}) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    padding: 6px;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    width: 48px;
+    background-color: rgb(46, 46, 46);
+
+    img {
+      filter: invert(1) brightness(0.95);
+    }
+  }
 }
 
 .navigation-buttons {
@@ -53,16 +85,68 @@ $navbar-button-spacing-downsize: 60px;
     &:last-child {
       margin-right: 0px;
     }
+    @media (max-width: #{$flow-break-width}) {
+      .text {
+        font-size: 2em;
+      }
+    }
   }
 
-  &.downsize {
-    & > button {
-      margin-right: $navbar-button-spacing-downsize;
-      & .text {
-        color: $primaryText;
+  @media (min-width: #{$flow-break-width}) {
+    &.downsize {
+      & > button {
+        margin-right: $navbar-button-spacing-downsize;
+        & .text {
+          color: $primaryText;
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
       }
-      &:last-child {
-        margin-right: 0px;
+    }
+  }
+
+  @keyframes toggle-menu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: #{$flow-break-width}) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: max-height 0.9s ease-in-out;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    z-index: -10;
+
+    &:not(.toggled) {
+      max-height: 0;
+      background-color: rgb(243, 243, 243);
+      flex-direction: row;
+      & > button {
+        display: none;
+      }
+    }
+    &.toggled {
+      max-height: 600px;
+      background-color: rgb(243, 243, 243);
+      box-shadow: 0px 1px 4px black;
+      padding-top: 90px;
+      padding-bottom: 40px;
+      & > button {
+        margin: 0 40px;
+        z-index: 20;
+        p {
+          // color: rgb(235, 235, 235);
+        }
       }
     }
   }
