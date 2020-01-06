@@ -1,17 +1,38 @@
 import React from "react";
 import "./ParallaxContainer.scss";
-
-// config
-const scrollZoomTrigger = 50; // in px
+import { TweenMax, Power4, Linear } from "gsap";
+import { parallaxContainerScrollTrigger } from "../layoutConfig";
 
 class ParallaxContainer extends React.Component {
-  state = {
-    isZoomed: false
-  };
+  constructor(props) {
+    super(props);
+  }
+
+  imgRef = React.createRef();
 
   handleScroll = e => {
     const { scrollTop } = e.srcElement.scrollingElement;
-    this.setState({ isZoomed: scrollTop > scrollZoomTrigger });
+    const isZoomed = scrollTop > parallaxContainerScrollTrigger;
+
+    if (isZoomed) {
+      TweenMax.to(this.imgRef, 1, {
+        opacity: 0,
+        ease: Power4.easeInOut
+      });
+      // TweenMax.to(this.imgRef, 1, {
+      //   scale: 1.1,
+      //   ease: Linear.ease
+      // });
+    } else {
+      TweenMax.to(this.imgRef, 1, {
+        opacity: 1,
+        ease: Power4.easeInOut
+      });
+      // TweenMax.to(this.imgRef, 1, {
+      //   scale: 1,
+      //   ease: Linear.ease
+      // });
+    }
   };
 
   componentDidMount() {
@@ -23,16 +44,14 @@ class ParallaxContainer extends React.Component {
   }
 
   render() {
-    const getBgClass = () => {
-      let initialClass = "background ";
-      initialClass += this.state.isZoomed ? "zoomed" : "";
-      return initialClass;
-    };
-
     return (
       <div className="parallax-container">
-        <div className={getBgClass()}>
-          <img src="/static/bg.png" alt="background" />
+        <div className="background">
+          <img
+            ref={el => (this.imgRef = el)}
+            src="/static/bg.png"
+            alt="background"
+          />
         </div>
         <div className="foreground">{this.props.children}</div>
       </div>

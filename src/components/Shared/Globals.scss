@@ -1,12 +1,20 @@
-$primaryColor: #242424;
-$secondaryColor: #fff;
-$primaryText: #fff;
-$primaryBg: #1d1d1d;
-
 $shadow_subtle: 0 6px 6px #00000061;
 $shadowOffset: 10px;
 
 $font-family: "Cairo", sans-serif;
+
+$white: #fffaff;
+$action: #fe1c71;
+$navbar-downsize-bg: #5f0f40;
+$website-bg: #2d1e2f;
+$person-bg: #f5e9e2;
+$person-icon-filter: invert(23%) sepia(90%) saturate(4117%) hue-rotate(326deg)
+  brightness(102%) contrast(55%);
+
+$primaryColor: #242424;
+$secondaryColor: #fff;
+$primaryText: $white;
+$primaryBg: #1d1d1d;
 
 @mixin flexCenter {
   display: flex;

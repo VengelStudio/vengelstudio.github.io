@@ -4,7 +4,7 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: row;
-  background-color: #fff;
+  background-color: $person-bg;
   justify-content: space-between;
   padding-left: 60px;
   align-items: center;
@@ -25,6 +25,9 @@
     flex-direction: row;
     margin-top: 4em;
     & > div {
+      img {
+        filter: $person-icon-filter;
+      }
       margin-right: $icon-horizontal-spacing;
       &:last-child {
         margin-right: 0;

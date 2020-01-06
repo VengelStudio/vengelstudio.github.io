@@ -5,7 +5,7 @@ import VSLogo from "../../assets/images/vengel-logo.svg";
 import Text from "../Shared/Text/Text";
 import HamburgerMenuIcon from "../../assets/icons/hamburger.svg";
 
-const scrollZoomTrigger = 300;
+import { navbarScrollTrigger } from "../layoutConfig";
 
 class Navbar extends React.Component {
   state = {
@@ -15,7 +15,7 @@ class Navbar extends React.Component {
 
   handleScroll = e => {
     const { scrollTop } = e.srcElement.scrollingElement;
-    this.setState({ isDownsize: scrollTop > scrollZoomTrigger });
+    this.setState({ isDownsize: scrollTop > navbarScrollTrigger });
   };
 
   handleMenuToggle = e => {
