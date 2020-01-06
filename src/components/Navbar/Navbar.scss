@@ -15,6 +15,10 @@ $navbar-button-spacing-downsize: 60px;
 
   @media (max-width: #{$flow-break-width}) {
     height: 56px;
+    transition: opacity 0.3s ease-in-out;
+    &.downsize {
+      opacity: 0;
+    }
   }
 
   @media (min-width: #{$flow-break-width}) {
@@ -125,7 +129,7 @@ $navbar-button-spacing-downsize: 60px;
 
     &:not(.toggled) {
       max-height: 0;
-      background-color: rgba(243, 243, 243, 0.788);
+      background-color: rgb(243, 243, 243);
       flex-direction: row;
       & > button {
         display: none;
@@ -133,7 +137,8 @@ $navbar-button-spacing-downsize: 60px;
     }
     &.toggled {
       max-height: 600px;
-      background-color: rgba(243, 243, 243, 0.788);
+      background-color: rgb(243, 243, 243);
+      box-shadow: 0px 1px 4px black;
       padding-top: 90px;
       padding-bottom: 40px;
       & > button {
