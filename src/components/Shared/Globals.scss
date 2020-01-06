@@ -18,3 +18,13 @@ $font-family: "Cairo", sans-serif;
   border: none;
   background: none;
 }
+
+@mixin fontSizeTransition {
+  transition: font-size ease-in-out 0.5s;
+}
+
+/* Project cards */
+$card-width: 200px;
+$card-height: 320px;
+$card-vertical-spacing: 40px;
+$flow-break-width: calc(3 * #{$card-width} + 40px);
