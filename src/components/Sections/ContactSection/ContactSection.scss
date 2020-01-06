@@ -12,7 +12,10 @@ section.contact {
     }
   }
 
-  & > .header {
+  & > h2.header {
     align-self: center;
+    @media (max-width: 700px) {
+      font-size: 3em;
+    }
   }
 }
