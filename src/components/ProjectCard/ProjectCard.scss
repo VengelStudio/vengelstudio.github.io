@@ -1,73 +1,58 @@
 @import "../Shared/Globals.scss";
 
 .card-wrapper {
-  background-color: white;
-  margin-right: 10em;
-  width: 14vw;
-  height: 40vh;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  &:last-child {
-    margin-right: 0;
-  }
+  background-color: white;
+  width: $card-width;
+  min-height: $card-height;
+  border-radius: 20px;
 }
 
 .project-screenshot {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 50%;
+  height: 120px;
   background-color: black;
   transition: height 0.5s;
-}
 
-.project-title {
-  margin-bottom: 2vh;
-  * {
-    white-space: nowrap;
-    margin: 0;
+  img.screenshot {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
 .project-info {
-  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   text-align: center;
-  color: black;
+  justify-content: space-between;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  height: 50%;
+  padding: 5px;
+  box-sizing: border-box;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
 
   & .header,
   & .text {
     color: black;
   }
-}
 
-.project-description {
-  word-wrap: break-word;
-  margin-bottom: 3vh;
-}
-
-.screenshot {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 1600px) {
-  .project-title {
-    font-size: 1vh;
+  .project-title .header {
+    white-space: pre-wrap;
+    font-size: 20px;
   }
+
   .project-description {
-    font-size: 1vh;
+    word-wrap: break-word;
+    font-size: 16px;
   }
+
   button.button-type-learn {
-    font-size: 2vh;
+    margin: 0.4em 0;
   }
 }
