@@ -1,6 +1,6 @@
 import React from "react";
 import "./ParallaxContainer.scss";
-import { TweenMax, Power4, Linear } from "gsap";
+import { TweenMax, Linear, Power4 } from "gsap";
 import { parallaxContainerScrollTrigger } from "../layoutConfig";
 
 class ParallaxContainer extends React.Component {
@@ -15,23 +15,15 @@ class ParallaxContainer extends React.Component {
     const isZoomed = scrollTop > parallaxContainerScrollTrigger;
 
     if (isZoomed) {
-      TweenMax.to(this.imgRef, 1, {
+      TweenMax.to(this.imgRef, 0.7, {
         opacity: 0,
-        ease: Power4.easeInOut
+        ease: Linear.easeIn
       });
-      // TweenMax.to(this.imgRef, 1, {
-      //   scale: 1.1,
-      //   ease: Linear.ease
-      // });
     } else {
-      TweenMax.to(this.imgRef, 1, {
+      TweenMax.to(this.imgRef, 0.7, {
         opacity: 1,
-        ease: Power4.easeInOut
+        ease: Power4.easeOut
       });
-      // TweenMax.to(this.imgRef, 1, {
-      //   scale: 1,
-      //   ease: Linear.ease
-      // });
     }
   };
 
