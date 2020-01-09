@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.8.3",
     "gh-pages": "^2.0.1",
     "gsap": "^3.0.2",
     "node-sass": "^4.12.0",
