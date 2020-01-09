@@ -31,6 +31,11 @@ $primaryBg: #1d1d1d;
   transition: font-size ease-in-out 0.5s;
 }
 
+@mixin borderWithShadow($color) {
+  border: 1px solid $color;
+  box-shadow: $color 0px 4px;
+}
+
 /* Project cards */
 $card-width: 200px;
 $card-height: 320px;

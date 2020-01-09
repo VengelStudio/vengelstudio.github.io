@@ -20,9 +20,9 @@ class ParallaxContainer extends React.Component {
         ease: Linear.easeIn
       });
     } else {
-      TweenMax.to(this.imgRef, 0.7, {
+      TweenMax.to(this.imgRef, 0.4, {
         opacity: 1,
-        ease: Power4.easeOut
+        ease: Power4.easeIn
       });
     }
   };
