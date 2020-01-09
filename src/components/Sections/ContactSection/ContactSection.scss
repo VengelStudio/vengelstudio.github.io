@@ -7,9 +7,14 @@ section.contact {
   align-items: stretch;
   margin-bottom: 70px;
 
-  & > .person {
-    margin-bottom: 1em;
-    &:last-child {
+  & > div {
+    & .person {
+      margin-bottom: 2em;
+      border-top: solid rgba(51, 51, 51, 0.781) 1px;
+      border-bottom: solid rgba(51, 51, 51, 1) 1px;
+      box-shadow: rgba(51, 51, 51, 1) 0px 4px;
+    }
+    &:last-of-type .person {
       margin-bottom: 0;
     }
   }

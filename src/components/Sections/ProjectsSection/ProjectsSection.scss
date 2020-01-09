@@ -17,6 +17,8 @@ section.projects {
     margin: 70px 0;
     width: 100%;
     justify-content: space-evenly;
+    padding: 60px 0;
+    background-color: #f5f5f547;
 
     @media (max-width: #{$flow-break-width}) {
       flex-direction: column;
