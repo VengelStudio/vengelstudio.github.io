@@ -1,8 +1,29 @@
 @import "../Shared/Globals.scss";
 
 .footer {
-  padding: 4px 0;
   text-align: center;
+  color: white;
+  @include flexCenter();
+  font-size: 1.5vh;
   width: 100%;
   background-color: $primaryBg;
+}
+
+img {
+  width: 1.5vh;
+  margin-right: 8px;
+}
+
+.contact {
+  @include flexCenter();
+  margin-left: 8vw;
+}
+.person:last-child {
+  margin-left: 2vh;
+}
+
+.person > a {
+  text-decoration: none;
+  color: white;
+  @include flexCenter();
 }
