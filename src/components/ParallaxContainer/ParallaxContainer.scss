@@ -1,27 +1,58 @@
+$perspective: 1px;
+$background-translateZ: -1px;
 .parallax-container {
+  position: relative;
   display: flex;
   justify-content: flex-end;
+  perspective: $perspective;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 
-  .background {
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    z-index: -5;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-    & img {
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-      transition: transform 1s ease-in-out;
+    $scale-factor: 1 + ($background-translateZ * -1) / $perspective;
+    &.--background {
+      transform: translateZ(-1px) scale($scale-factor);
+      left: -10px; // compensate for scrollbar
+
+      img {
+        width: 100%;
+        height: 200%;
+        object-fit: cover;
+      }
+    }
+
+    &.--foreground {
+      transform: translateZ(0);
     }
   }
 
-  .foreground {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+  // .background {
+  //   position: fixed;
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   z-index: -5;
+  //   width: 100%;
+  //   height: 100vh;
+  //   overflow: hidden;
+
+  //   & img {
+  //     width: 100%;
+  //     object-fit: cover;
+  //     object-position: center;
+  //     transition: transform 1s ease-in-out;
+  //   }
+  // }
+
+  // .foreground {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 100%;
+  // }
 }
