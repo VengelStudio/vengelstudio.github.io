@@ -4,7 +4,14 @@ section.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  flex: 1;
   width: 100%;
+  // background-color: #3e3b5c56;
+  background-color: #85b4ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2386cc36' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23266f3b' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%238dc538' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23216934' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%2392be3a' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%231c642d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2396b73d' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23165e26' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2399b141' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2311591e' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%239baa45' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%230a5317' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 
   @media (max-width: #{$flow-break-width}) {
     h2.header {
@@ -18,7 +25,6 @@ section.projects {
     width: 100%;
     justify-content: space-evenly;
     padding: 120px 0;
-    background-color: #0a122156;
 
     @media (max-width: #{$flow-break-width}) {
       flex-direction: column;

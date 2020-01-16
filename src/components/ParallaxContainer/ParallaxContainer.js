@@ -26,11 +26,15 @@ class ParallaxContainer extends React.Component {
     return (
       <div ref={this.containerRef} className="parallax-container">
         <div className="parallax-layer --background">
-          <img
+          {/* <img
             style={{ height: this.state.bgHeight }}
             src="/static/bg.jpg"
             alt="background"
-          />
+          /> */}
+          <div
+            style={{ height: this.state.bgHeight }}
+            className="bg-pattern"
+          ></div>
         </div>
         <div className="parallax-layer --foreground">{this.props.children}</div>
       </div>
