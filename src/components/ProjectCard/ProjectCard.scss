@@ -1,59 +1,35 @@
-@import "../Shared/Globals.scss";
-
-.card-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: $card-width;
-  min-height: $card-height;
-  border-radius: 20px;
-  @include borderWithShadow(#252525);
-}
-
-.project-screenshot {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 120px;
-  background-color: black;
-  transition: height 0.5s;
-
-  img.screenshot {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.MuiPaper-root {
+  &.disabled {
+    position: relative;
+    background-color: rgb(179, 179, 179);
+    .MuiCardMedia-root {
+      filter: brightness(0.3);
+    }
+    button.MuiButton-textPrimary,
+    button.MuiButton-textSecondary {
+      opacity: 0.5;
+      &:active,
+      &:hover {
+        cursor: default;
+      }
+      color: grey;
+    }
   }
 }
 
-.project-info {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-between;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  padding: 5px;
-  box-sizing: border-box;
-  background-color: white;
-
-  & .header,
-  & .text {
-    color: black;
-  }
-
-  .project-title .header {
-    white-space: pre-wrap;
-    font-size: 20px;
-  }
-
-  .project-description {
-    word-wrap: break-word;
-    font-size: 16px;
-  }
-
-  button.button-type-learn {
-    margin: 0.4em 0;
+div.disabled-overlay {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  .text {
+    display: block;
+    color: rgb(219, 219, 219);
+    transform: rotateY(0deg) rotate(45deg) translateX(30%) translateY(-50%);
+    margin: auto;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(145, 32, 32, 0.767);
   }
 }

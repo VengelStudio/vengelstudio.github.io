@@ -1,0 +1,24 @@
+@import "../Shared/Globals.scss";
+
+div.container {
+  text-align: center;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  background-color: #161616;
+  border: solid #b39c4d40 1px;
+  position: relative;
+
+  .link {
+    margin-bottom: 1em;
+    display: block;
+    text-decoration: none;
+    span {
+      background-color: #ccbb20;
+      color: #24212c;
+      padding: 0.5em 1em;
+      font-weight: bold;
+      box-sizing: border-box;
+      border-radius: 50px;
+    }
+  }
+}

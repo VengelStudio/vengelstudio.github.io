@@ -6,8 +6,12 @@
   flex-direction: row;
   background-color: $person-bg;
   justify-content: space-between;
-  padding-left: 60px;
   align-items: center;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  background-color: #161616;
+  border-radius: 12px;
+  border: solid #b39c4d40 1px;
 
   & .person-info {
     display: flex;

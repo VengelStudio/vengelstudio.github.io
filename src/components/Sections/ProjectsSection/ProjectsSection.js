@@ -22,19 +22,19 @@ const ProjectsSection = () => {
             "A combination of a traditional hangman game and a card game"
           }
           screenshot={Cardman2}
+          playLink="http://cardman-multiplayer.herokuapp.com/"
+          sourceCodeLink="https://github.com/VengelStudio/cardman-multiplayer"
         />
         <ProjectCard
-          title={"Cardman Multiplayer"}
-          description={
-            "A combination of a traditional hangman game and a card game"
-          }
+          isReady={false}
+          title={"Poznajmy się"}
+          description={"A simple party game, designed for Polish users"}
           screenshot={ph2}
         />
         <ProjectCard
-          title={"Cardman Multiplayer"}
-          description={
-            "A combination of a traditional hangman game and a card game"
-          }
+          isReady={false}
+          title={"Bookmark Checker"}
+          description={"A browser extension to remove redundant bookmarks"}
           screenshot={ph3}
         />
       </div>
