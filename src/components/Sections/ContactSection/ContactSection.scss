@@ -4,11 +4,72 @@ section.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   width: 100%;
+  flex: 1;
+  height: 100%;
+
+  h2.header {
+    margin-top: 10vh;
+    margin-bottom: 30vh;
+  }
 
   @media (max-width: #{$flow-break-width}) {
     h2.header {
       font-size: 3em;
+      margin-bottom: 20vh;
+    }
+  }
+}
+
+.wrapper.us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.person {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .text {
+    margin-bottom: 8vh;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .icons {
+    display: flex;
+    width: 25vw;
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+      width: 6vh;
+      filter: brightness(100) contrast(100) grayscale(100);
+    }
+  }
+}
+
+@media (max-width: #{$flow-break-width}) {
+  .wrapper.us {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45vh;
+  }
+  .person {
+    .text.text-size1 {
+      font-size: 4vh;
+      margin-bottom: 6vh;
+    }
+    .icons {
+      width: 70vw;
+      img {
+        width: 5vh;
+      }
     }
   }
 }
