@@ -1,0 +1,14 @@
+@import "../../Shared/Globals.scss";
+
+section.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: #{$flow-break-width}) {
+    h2.header {
+      font-size: 3em;
+    }
+  }
+}
