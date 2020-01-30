@@ -1,0 +1,13 @@
+@import "../Shared/Globals.scss";
+
+img.company-logo {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  z-index: -10;
+  height: 12vmax;
+
+  filter: brightness(4) opacity(0.4) contrast(2);
+  background-color: rgb(20, 20, 20);
+  border-radius: 10px;
+}

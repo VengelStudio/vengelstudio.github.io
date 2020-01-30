@@ -8,6 +8,7 @@
   font-family: $font-family;
   text-align: center;
   padding: 0 40px;
+  margin-bottom: 20vh;
   @include fontSizeTransition;
 
   div.text-break {

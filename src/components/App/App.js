@@ -6,11 +6,13 @@ import Hero from "../Shared/Hero/Hero";
 import ProjectsSection from "../Sections/ProjectsSection/ProjectsSection";
 import ContactSection from "../Sections/ContactSection/ContactSection";
 import FooterSection from "../Sections/FooterSection/FooterSection";
+import CompanyLogo from "../CompanyLogo/CompanyLogo";
 
 const App = () => {
   return (
     <ParallaxContainer>
       <FullHeightWrapper>
+        <CompanyLogo />
         <Hero>
           <div className="text-break">We are </div>Vengel Studio
         </Hero>
