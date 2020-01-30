@@ -10,7 +10,8 @@ section.contact {
   height: 100%;
 
   h2.header {
-    margin-top: 10vh;
+    margin-top: 6vh;
+    margin-bottom: 8vh;
   }
 
   @media (max-width: #{$flow-break-width}) {
@@ -30,6 +31,13 @@ section.contact {
   flex-direction: row;
   align-items: center;
   width: 100%;
+
+  @media (max-width: #{$flow-break-width}) {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10vw;
+    width: auto;
+  }
 }
 
 .person {
@@ -39,7 +47,11 @@ section.contact {
   justify-content: center;
   align-items: center;
   .text {
-    margin-bottom: 8vh;
+    &:nth-child(2) {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 8vh;
+    }
   }
   a {
     text-decoration: none;
@@ -52,24 +64,26 @@ section.contact {
     align-items: center;
     img {
       width: 6vh;
-      filter: brightness(100) contrast(100) grayscale(100);
     }
   }
 }
 
 @media (max-width: #{$flow-break-width}) {
-  .wrapper.us {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 45vh;
-  }
   .person {
+    margin-top: 10vh;
     .text.text-size1 {
       font-size: 4vh;
-      margin-bottom: 6vh;
+    }
+    .text.text-size3 {
+      font-size: 3vh;
+    }
+    .text {
+      &:nth-child(2) {
+        margin-bottom: 2vh;
+      }
     }
     .icons {
-      width: 70vw;
+      width: 50vw;
       img {
         width: 5vh;
       }

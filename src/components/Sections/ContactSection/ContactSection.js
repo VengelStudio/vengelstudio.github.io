@@ -18,6 +18,12 @@ const ContactSection = () => {
           <Text size={1} weight={600}>
             Bartosz Kępka
           </Text>
+          <Text className="description" size={3}>
+            A student of Automation and Robotics at Warsaw University of
+            Technology. <br />
+            <br />
+            Webdev passionate.
+          </Text>
           <div className="icons">
             <a href="https://github.com/Dezann">
               <img src={github}></img>
@@ -33,6 +39,12 @@ const ContactSection = () => {
         <div className="person">
           <Text size={1} weight={600}>
             Łukasz Blachnicki
+          </Text>
+          <Text size={3}>
+            A student of Applied Computer Science at Wrocław University of
+            Technology. <br />
+            <br />
+            Knows how to google stuff.
           </Text>
           <div className="icons">
             <a href="https://github.com/Kartm">
