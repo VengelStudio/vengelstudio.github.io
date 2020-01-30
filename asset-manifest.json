@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.343277e9.chunk.css",
+    "main.css": "/static/css/main.242f00dd.chunk.css",
     "main.js": "/static/js/main.990fafb4.chunk.js",
     "main.js.map": "/static/js/main.990fafb4.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -9,10 +9,10 @@
     "static/js/2.9983f6bb.chunk.js": "/static/js/2.9983f6bb.chunk.js",
     "static/js/2.9983f6bb.chunk.js.map": "/static/js/2.9983f6bb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4768def5d6b3e424d623925da5c396e4.js": "/precache-manifest.4768def5d6b3e424d623925da5c396e4.js",
+    "precache-manifest.2d67c3f3b19212c98a506339613ef0c1.js": "/precache-manifest.2d67c3f3b19212c98a506339613ef0c1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.343277e9.chunk.css.map": "/static/css/main.343277e9.chunk.css.map",
+    "static/css/main.242f00dd.chunk.css.map": "/static/css/main.242f00dd.chunk.css.map",
     "static/media/cardman.png": "/static/media/cardman.22a1124f.png",
     "static/media/github.svg": "/static/media/github.6d5f663c.svg",
     "static/media/gmail.svg": "/static/media/gmail.51040883.svg",
