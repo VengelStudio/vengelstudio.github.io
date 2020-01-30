@@ -11,6 +11,6 @@
   @include fontSizeTransition;
 
   @media (max-width: #{$flow-break-width}) {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
