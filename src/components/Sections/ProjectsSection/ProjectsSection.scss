@@ -13,6 +13,10 @@ section.projects {
   background-attachment: fixed;
   background-size: cover;
 
+  h2.header {
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+  }
   @media (max-width: #{$flow-break-width}) {
     h2.header {
       font-size: 3em;

@@ -21,8 +21,11 @@ const useStyles = makeStyles({
 
 const ProjectCard = props => {
   const classes = useStyles();
+  const isProjectReady = props.isReady || false;
+  console.log(isProjectReady);
+  console.log(classes.card);
   return (
-    <Card className={classes.card}>
+    <Card className={`${classes.card}${isProjectReady ? "" : " disabled"}`}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -48,6 +51,10 @@ const ProjectCard = props => {
       </CardActions>
     </Card>
   );
+};
+
+ProjectCard.defaultProps = {
+  isReady: true
 };
 
 export default ProjectCard;
