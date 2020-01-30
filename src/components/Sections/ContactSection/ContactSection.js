@@ -19,13 +19,13 @@ const ContactSection = () => {
             Bartosz Kępka
           </Text>
           <div className="icons">
-            <a href="https://github.com/Kartm">
+            <a href="https://github.com/Dezann">
               <img src={github}></img>
             </a>
-            <a href="https://github.com/Kartm">
+            <a href="https://www.linkedin.com/in/bartosz-k%C4%99pka-118325181/">
               <img src={linkedin}></img>
             </a>
-            <a href="https://github.com/Kartm">
+            <a href="mailto:bartoszkepka1999@gmail.com">
               <img src={gmail}></img>
             </a>
           </div>
@@ -38,10 +38,10 @@ const ContactSection = () => {
             <a href="https://github.com/Kartm">
               <img src={github}></img>
             </a>
-            <a href="https://github.com/Kartm">
+            <a href="https://www.linkedin.com/in/%C5%82ukasz-blachnicki/">
               <img src={linkedin}></img>
             </a>
-            <a href="https://github.com/Kartm">
+            <a href="mailto:lblachnicki@gmail.com">
               <img src={gmail}></img>
             </a>
           </div>
