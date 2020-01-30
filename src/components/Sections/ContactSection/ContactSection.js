@@ -5,6 +5,7 @@ import Text from "../../Shared/Text/Text";
 import github from "../../../assets/icons/github.svg";
 import gmail from "../../../assets/icons/gmail.svg";
 import linkedin from "../../../assets/icons/linkedin.svg";
+import ContactForm from "../../ContactForm/ContactForm";
 
 const ContactSection = () => {
   return (
@@ -46,6 +47,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+      <ContactForm />
     </section>
   );
 };

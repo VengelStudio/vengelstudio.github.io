@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export const Link = props => {
   return (
-    <a href={props.src}>
+    <a className="link" href={props.src}>
       <span>{props.children}</span>
     </a>
   );
