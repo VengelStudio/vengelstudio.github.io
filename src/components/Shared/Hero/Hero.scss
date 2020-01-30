@@ -1,7 +1,7 @@
 @import "../Globals.scss";
 
 .hero {
-  color: $primaryText;
+  color: #ffd700;
   font-size: 12vmin;
   text-shadow: 0 6px 6px #00000061;
   font-weight: 600;
@@ -10,7 +10,13 @@
   padding: 0 40px;
   @include fontSizeTransition;
 
+  div.text-break {
+    display: inline;
+  }
   @media (max-width: #{$flow-break-width}) {
     font-size: 3em;
+    div.text-break {
+      display: block;
+    }
   }
 }

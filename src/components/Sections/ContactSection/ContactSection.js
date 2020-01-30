@@ -10,6 +10,7 @@ import ContactForm from "../../ContactForm/ContactForm";
 const ContactSection = () => {
   return (
     <section className="contact">
+      <div className="background" />
       <Header size={2} shadow={true}>
         About us
       </Header>
@@ -22,7 +23,7 @@ const ContactSection = () => {
             A student of Automation and Robotics at Warsaw University of
             Technology. <br />
             <br />
-            Webdev passionate.
+            <i>Webdev passionate.</i>
           </Text>
           <div className="icons">
             <a href="https://github.com/Dezann">
@@ -44,7 +45,7 @@ const ContactSection = () => {
             A student of Applied Computer Science at Wrocław University of
             Technology. <br />
             <br />
-            Knows how to google stuff.
+            <i>Knows how to google stuff.</i>
           </Text>
           <div className="icons">
             <a href="https://github.com/Kartm">

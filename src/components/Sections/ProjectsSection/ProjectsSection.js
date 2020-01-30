@@ -22,6 +22,8 @@ const ProjectsSection = () => {
             "A combination of a traditional hangman game and a card game"
           }
           screenshot={Cardman2}
+          playLink="http://cardman-multiplayer.herokuapp.com/"
+          sourceCodeLink="https://github.com/VengelStudio/cardman-multiplayer"
         />
         <ProjectCard
           isReady={false}

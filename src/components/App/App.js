@@ -11,7 +11,9 @@ const App = () => {
   return (
     <ParallaxContainer>
       <FullHeightWrapper>
-        <Hero>We are Vengel Studio</Hero>
+        <Hero>
+          <div className="text-break">We are </div>Vengel Studio
+        </Hero>
       </FullHeightWrapper>
 
       <FullHeightWrapper>
