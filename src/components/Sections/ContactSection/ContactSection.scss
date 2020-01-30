@@ -4,14 +4,13 @@ section.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
   flex: 1;
   height: 100%;
 
   h2.header {
     margin-top: 10vh;
-    margin-bottom: 30vh;
   }
 
   @media (max-width: #{$flow-break-width}) {
@@ -19,6 +18,10 @@ section.contact {
       font-size: 3em;
       margin-bottom: 20vh;
     }
+  }
+
+  div.container.contact {
+    margin: 80px 0;
   }
 }
 
@@ -71,9 +74,5 @@ section.contact {
         width: 5vh;
       }
     }
-  }
-
-  div.container.contact {
-    margin-top: 4em;
   }
 }
